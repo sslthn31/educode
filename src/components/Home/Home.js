@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import HomeClassList from './HomeClassList';
 import About from './About';
+import Features from './Features';
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
       <div className="about-component">
         <About />
       </div>
-      <div className="benefit-component"></div>
+      <div className="Features-component">
+        <Features />
+      </div>
       <div className="classlist-component">
         <HomeClassList />
       </div>

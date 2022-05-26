@@ -58,7 +58,9 @@ const JScourse = () => {
           {counter === 1 ? null : <button onClick={prevButton}>PREV</button>}
           {counter === 9 ? (
             <button>
-              <Link to="/examStart">TES</Link>
+              <Link to="/JsExamTest" className="test-link">
+                TES
+              </Link>
             </button>
           ) : (
             <button onClick={nextButton}>NEXT</button>

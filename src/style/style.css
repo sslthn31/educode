@@ -1,0 +1,355 @@
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: all ease-out 0.8s;
+}
+
+.navbar.colorChange {
+  background: rgb(9, 9, 10);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar-container .navbar-title {
+  background: linear-gradient(to right, rgb(66, 220, 23) 20%, rgb(0, 78, 114) 40%, rgb(0, 78, 114) 60%, rgb(66, 220, 23) 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  cursor: pointer;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.nav-links.change-color {
+  color: #ccdae0;
+}
+
+.nav-links li {
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+}
+.nav-links li span {
+  margin-right: 5px;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ccdae0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/* Home */
+.home-title {
+  position: absolute;
+  z-index: 99;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(201, 42, 42);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+.home-title h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.home-title h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.home-video video {
+  max-width: 100%;
+  width: 100%;
+  max-height: 455px;
+  height: 100%;
+  object-fit: cover;
+}
+/* Home class list */
+.home-class {
+  padding: 100px 0;
+  padding-left: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-class-list-title {
+  font-size: 30px;
+}
+.class-card {
+  width: 250px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.class-card:hover {
+  transform: scale(1.1);
+  background-color: #e0dcbe;
+}
+.class-card .image-card {
+  border-radius: 5px 5px 0 0;
+  max-width: 250px;
+  max-height: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.class-card .card-desc {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.card-desc h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.card-desc p {
+  font-size: 12px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 200px;
+  height: 30px;
+  background: #e40000;
+  border: none;
+  border-radius: 5px;
+}
+.button .btn-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  width: 650px;
+  background-color: #000;
+  border-radius: 5px 0 0 5px;
+}
+.inner-carousel {
+  display: flex;
+  /* background-color: rgb(93, 163, 196); */
+}
+.items {
+  min-height: 20rem;
+  min-width: 19rem;
+  padding: 1.5rem 0;
+}
+
+/* About */
+.about {
+  padding: 100px 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about-desc {
+  padding: 0 2rem;
+}
+.about-desc h4 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+.about-desc p {
+  font-size: 20px;
+}
+
+/* Features */
+.features {
+  padding: 100px 1rem;
+}
+.features-cards-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-card {
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  padding: 2rem 1rem;
+  margin: 0 0.5rem;
+}
+.feature-card:nth-child(2) {
+  height: 450px;
+}
+.feature-card .feature-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.feature-card .feature-icon img {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+}
+.feature-card h4 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.feature-card p {
+  text-align: center;
+}
+
+/* Class List */
+.class {
+  padding: 50px 2rem;
+}
+.class-title h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.class .class-list {
+  padding: 50px 0;
+}
+
+/* Course */
+.loading {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course {
+  padding: 50px 1rem;
+}
+
+.course-container h2 {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.course-video-container {
+  display: flex;
+  justify-content: center;
+}
+.course-container .course-video {
+  width: 100%;
+  height: 400px;
+}
+
+.course-desc {
+  padding: 50px 0;
+  margin-bottom: 25px;
+}
+.course-desc p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+.course-desc-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.course-desc-image img {
+  width: 500px;
+  height: 3 00px;
+  object-fit: cover;
+}
+.course-button-list {
+  padding: 25px 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.course-button-list button {
+  width: 130px;
+  height: 60px;
+  border: none;
+  background: red;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.course-button-list .test-link {
+  text-decoration: none;
+  color: #000;
+}
