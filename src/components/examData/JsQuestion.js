@@ -23,22 +23,22 @@ export const JsQuestion = [
   },
   {
     id: 2,
-    question: 'What is the correct JavaScript syntax to change the content of the HTML element below? <p id="demo">This is a demonstration.</p>',
+    question: 'The external JavaScript file must contain the <script> tag.',
     options: [
       {
-        title: '#demo.innerHTML = "Hello World" ',
-        correct: false,
-      },
-      {
-        title: 'document.getElement("p").innerHTML = "Hello World"',
-        correct: false,
-      },
-      {
-        title: 'document.getElementById("demo").innerHTML = "Hello World"',
+        title: 'True',
         correct: true,
       },
       {
-        title: 'document.getElementByName("demo").innerHTML = "Hello World',
+        title: 'False',
+        correct: false,
+      },
+      {
+        title: 'Should in Css file',
+        correct: false,
+      },
+      {
+        title: 'None at Above',
         correct: false,
       },
     ],
@@ -89,22 +89,132 @@ export const JsQuestion = [
   },
   {
     id: 5,
-    question: 'How do you write "Hello World" in an alert box?',
+    question: 'How do you create a function in JavaScript?',
     options: [
       {
-        title: 'msgBox("Hello World")',
+        title: 'function() myFunction',
         correct: false,
       },
       {
-        title: 'alert("Hello World")',
+        title: 'function myFunction()',
         correct: true,
       },
       {
-        title: 'alertBox("Hello World")',
+        title: 'myFunction()',
         correct: false,
       },
       {
-        title: 'msg("Hello World")',
+        title: 'function:myFunction()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 6,
+    question: 'How do you call a function named "myFunction"?',
+    options: [
+      {
+        title: 'call function myFunction()',
+        correct: false,
+      },
+      {
+        title: 'call myFunction()',
+        correct: false,
+      },
+      {
+        title: 'myFunction()',
+        correct: true,
+      },
+      {
+        title: 'console.log(myFunction)',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 7,
+    question: 'How to write an IF statement in JavaScript?',
+    options: [
+      {
+        title: 'if i == 5 then',
+        correct: false,
+      },
+      {
+        title: 'if i = 5 then',
+        correct: false,
+      },
+      {
+        title: 'if i = 5',
+        correct: false,
+      },
+      {
+        title: 'if(i == 5)',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 8,
+    question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5 ?',
+    options: [
+      {
+        title: 'if i <> 5 ',
+        correct: false,
+      },
+      {
+        title: 'if(i <> 5)',
+        correct: false,
+      },
+      {
+        title: 'if i =! 5 then',
+        correct: false,
+      },
+      {
+        title: 'if(i != 5)',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 9,
+    question: 'How does a WHILE loop start ?',
+    options: [
+      {
+        title: 'while(i <= 10)',
+        correct: true,
+      },
+      {
+        title: 'while(i <= 10; i++)',
+        correct: false,
+      },
+      {
+        title: 'while(i++)',
+        correct: false,
+      },
+      {
+        title: 'while i = 1 to 10',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 10,
+    question: 'How does a FOR loop start?',
+    options: [
+      {
+        title: 'for i = 1 to 5',
+        correct: false,
+      },
+      {
+        title: 'for(i = 0; i <= 5)',
+        correct: false,
+      },
+      {
+        title: 'for(i = 0; i <= 5; i++)',
+        correct: true,
+      },
+      {
+        title: 'for(i = 0; i <= 5;)',
         correct: false,
       },
     ],
@@ -121,4 +231,7 @@ const shuffle = (array) => {
 };
 
 shuffle(JsQuestion);
-console.log(shuffle(JsQuestion));
+
+// for (let i = 0; i <= 500; i++) {
+//   console.table('shuffle ke-', i, shuffle(JsQuestion));
+// }

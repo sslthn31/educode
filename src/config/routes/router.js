@@ -8,6 +8,7 @@ import Navbar from '../../components/Navbar';
 import Courses from '../../components/Courses/ClassList';
 import JScourse from '../../components/Class/JScourse/JScourse';
 import JsExamTest from '../../components/Class/JScourse/JsExamTest';
+import SummaryJs from '../../components/Class/JScourse/Summary';
 import Footer from '../../components/Footer';
 const Router = () => {
   return (
@@ -20,8 +21,9 @@ const Router = () => {
           <Route path="/course" component={Courses} />
           <Route path="/jscourse" component={JScourse} />
           <Route path="/JsExamTest" component={JsExamTest} />
+          <Route path="/summary" component={SummaryJs} />
           <Route path="/examStart" component={Quiz} />
-          <Route path="/summary" component={Summary} />
+          <Route path="/summaryprototype" component={Summary} />
         </Switch>
         <Footer />
       </BrowserRouter>
