@@ -231,7 +231,8 @@ const shuffle = (array) => {
 };
 
 shuffle(JsQuestion);
-
-// for (let i = 0; i <= 500; i++) {
-//   console.table('shuffle ke-', i, shuffle(JsQuestion));
+console.log(shuffle(JsQuestion));
+// for (let i = 0; i < 10; i++) {
+//   const object = shuffle(JsQuestion);
+//   console.table('shuffle ke-', i, object);
 // }

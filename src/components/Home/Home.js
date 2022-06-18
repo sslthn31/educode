@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 import HomeClassList from './HomeClassList';
 import About from './About';
 import Features from './Features';
-
+import NewFeatures from './NewFeatures';
 const Home = () => {
   return (
     <div className="home">
@@ -18,6 +18,9 @@ const Home = () => {
       </div>
       <div className="classlist-component">
         <HomeClassList />
+      </div>
+      <div className="newfeatures-component">
+        <NewFeatures />
       </div>
     </div>
   );

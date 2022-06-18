@@ -25,7 +25,7 @@ const HomeClassList = () => {
                 <img className="image-card" src="./js-card.jpg" alt="" />
                 <div className="card-desc">
                   <h3>JavaScript Basic Class</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste, expedita suscipit accusantium sequi rerum similique mollitia aut saepe velit?</p>
+                  <p>Course About basic in JavaScript</p>
                 </div>
                 <div className="button">
                   <button>
@@ -41,7 +41,7 @@ const HomeClassList = () => {
                 <img className="image-card" src="./html-card.jpg" alt="" />
                 <div className="card-desc">
                   <h3>HTML Basic Class</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste, expedita suscipit accusantium sequi rerum similique mollitia aut saepe velit?</p>
+                  <p>Course About basic in HTML</p>
                 </div>
                 <div className="button">
                   <button disabled>
@@ -57,7 +57,7 @@ const HomeClassList = () => {
                 <img className="image-card" src="./css-card.jpg" alt="" />
                 <div className="card-desc">
                   <h3>CSS Basic Class</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste, expedita suscipit accusantium sequi rerum similique mollitia aut saepe velit?</p>
+                  <p>Course About basic in CSS</p>
                 </div>
                 <div className="button">
                   <button disabled>

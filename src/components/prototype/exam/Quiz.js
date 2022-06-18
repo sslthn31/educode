@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { JsQuestionData } from '../../certificationquestiondata/Jsquestiondata';
 import { Question } from './Question';
 import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
 
 const Quiz = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
-  const [quiz, setQuiz] = useState(Question);
+  const [quiz, setQuiz] = useState(JsQuestionData);
   const { id, question, options } = quiz[currentIndex];
   const [score, setScore] = useState({
     correct: 0,

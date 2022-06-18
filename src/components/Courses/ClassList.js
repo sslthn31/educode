@@ -9,15 +9,49 @@ const ClassList = () => {
       </div>
       <div className="class-list">
         <div className="class-card">
-          <img className="image-card" src="./js-card.jpg" alt="" />
+          <div className="image-card">
+            <img src="./js-card.jpg" alt="" />
+          </div>
           <div className="card-desc">
             <h3>JavaScript Basic Class</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste, expedita suscipit accusantium sequi rerum similique mollitia aut saepe velit?</p>
+            <p>Course About basic in JavaScript</p>
           </div>
           <div className="button">
             <button>
               <Link to="/jscourse" className="btn-link">
                 Join Class
+              </Link>
+            </button>
+          </div>
+        </div>
+        <div className="class-card">
+          <div className="image-card">
+            <img src="./html-card.jpg" alt="" />
+          </div>
+          <div className="card-desc">
+            <h3>HTML Basic Class</h3>
+            <p>Course About basic in HTML</p>
+          </div>
+          <div className="button">
+            <button disabled>
+              <Link to="/" className="btn-link">
+                On Progress...
+              </Link>
+            </button>
+          </div>
+        </div>
+        <div className="class-card">
+          <div className="image-card">
+            <img src="./css-card.jpg" alt="" />
+          </div>
+          <div className="card-desc">
+            <h3>CSS Basic Class</h3>
+            <p>Course About basic in CSS</p>
+          </div>
+          <div className="button">
+            <button disabled>
+              <Link to="/" className="btn-link">
+                On Progress...
               </Link>
             </button>
           </div>
