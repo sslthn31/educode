@@ -5,11 +5,11 @@ const ClassList = () => {
   return (
     <div className="class">
       <div className="class-title">
-        <h2>Our Class</h2>
+        <h2>Class List</h2>
       </div>
       <div className="class-list">
         <div className="class-card">
-          <div className="image-card">
+          <div className="class-image">
             <img src="./js-card.jpg" alt="" />
           </div>
           <div className="card-desc">
@@ -25,7 +25,7 @@ const ClassList = () => {
           </div>
         </div>
         <div className="class-card">
-          <div className="image-card">
+          <div className="class-image">
             <img src="./html-card.jpg" alt="" />
           </div>
           <div className="card-desc">
@@ -33,15 +33,15 @@ const ClassList = () => {
             <p>Course About basic in HTML</p>
           </div>
           <div className="button">
-            <button disabled>
-              <Link to="/" className="btn-link">
-                On Progress...
+            <button>
+              <Link to="/htmlcourse" className="btn-link">
+                Join Class
               </Link>
             </button>
           </div>
         </div>
         <div className="class-card">
-          <div className="image-card">
+          <div className="class-image">
             <img src="./css-card.jpg" alt="" />
           </div>
           <div className="card-desc">
@@ -49,9 +49,9 @@ const ClassList = () => {
             <p>Course About basic in CSS</p>
           </div>
           <div className="button">
-            <button disabled>
-              <Link to="/" className="btn-link">
-                On Progress...
+            <button>
+              <Link to="/csscourse" className="btn-link">
+                Join Class
               </Link>
             </button>
           </div>

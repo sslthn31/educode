@@ -44,9 +44,9 @@ const HomeClassList = () => {
                   <p>Course About basic in HTML</p>
                 </div>
                 <div className="button">
-                  <button disabled>
-                    <Link to="/" className="btn-link">
-                      On Progress...
+                  <button>
+                    <Link to="/htmlcourse" className="btn-link">
+                      Join Class
                     </Link>
                   </button>
                 </div>
@@ -60,9 +60,9 @@ const HomeClassList = () => {
                   <p>Course About basic in CSS</p>
                 </div>
                 <div className="button">
-                  <button disabled>
-                    <Link to="/" className="btn-link">
-                      On Progress...
+                  <button>
+                    <Link to="/csscourse" className="btn-link">
+                      Join Class
                     </Link>
                   </button>
                 </div>

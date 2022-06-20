@@ -5,7 +5,7 @@ const NewFeatures = () => {
     <div className="newfeatures">
       <div className="newfeatures-container">
         <div className="newfeatures-img">
-          <img src="./online-text-editor.png" alt="" />
+          <img src="./text-editor.png" alt="" />
         </div>
         <div className="newfeatures-desc">
           <h3>We Have New Features</h3>

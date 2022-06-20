@@ -962,7 +962,7 @@ export const JsQuestionData = [
   {
     id: 39,
     question: `var text = "testing: 1, 2, 3"; // Sample text
-    var pattern = /\d+/g // Matches all instances of one or more digits
+    var pattern = /d+/g // Matches all instances of one or more digits
     In order to check if the pattern matches with the string “text”, the statement is`,
     options: [
       {
@@ -1129,7 +1129,7 @@ export const JsQuestionData = [
       length:20,
       height:35,
     }
-    if (‘breadth' in obj === false) 
+    if (breadth in obj === false) 
     {
         obj.breadth = 12;
     }
@@ -1609,6 +1609,933 @@ export const JsQuestionData = [
       },
       {
         title: '17',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 62,
+    question: `What will be the output of the following JavaScript code?
+    function printArray(a) 
+{
+     var len = a.length, i = 0;
+     if (len == 0)
+        console.log("Empty Array");
+     else 
+     {
+         do 
+         {
+             console.log(a[i]);
+         } while (++i < len);
+     }
+}`,
+    options: [
+      {
+        title: 'Prints the numbers in the array in order',
+        correct: true,
+      },
+      {
+        title: 'Prints the numbers in the array in the reverse order',
+        correct: false,
+      },
+      {
+        title: 'Prints 0 to the length of the array',
+        correct: false,
+      },
+      {
+        title: 'Prints “Empty Array”',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 63,
+    question: 'What are the three important manipulations done in a for loop on a loop variable?',
+    options: [
+      {
+        title: 'Updation, Incrementation, Initialization',
+        correct: false,
+      },
+      {
+        title: 'Initialization,Testing, Updation',
+        correct: true,
+      },
+      {
+        title: 'Testing, Updation, Testing',
+        correct: false,
+      },
+      {
+        title: 'Initialization, Testing, Incrementation',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 64,
+    question: `What will the following JavaScript code snippet work? If not, what will be the error?
+    function tail(o) 
+    { 
+        for (; o.next; o = o.next) ;
+        return o;
+    }`,
+    options: [
+      {
+        title: 'This will throw an exception as only numerics can be used in a for loop',
+        correct: false,
+      },
+      {
+        title: 'This will not iterate',
+        correct: false,
+      },
+      {
+        title: 'This will work',
+        correct: true,
+      },
+      {
+        title: 'This will result in a runtime error with the message “Cannot use Linked List',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 65,
+    question: 'One of the special features of an interpreter in reference with the for loop is that',
+    options: [
+      {
+        title: 'Before each iteration, the interpreter evaluates the variable expression and assigns the name of the property',
+        correct: true,
+      },
+      {
+        title: 'The iterations can be infinite when an interpreter is used',
+        correct: false,
+      },
+      {
+        title: 'The body of the loop is executed only once',
+        correct: false,
+      },
+      {
+        title: 'The iteration is finite when an interpreter is used',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 66,
+    question: 'What will happen if the body of a for/in loop deletes a property that has not yet been enumerated?',
+    options: [
+      {
+        title: 'The property will be stored in a cache',
+        correct: false,
+      },
+      {
+        title: 'The loop will not run',
+        correct: false,
+      },
+      {
+        title: 'That property will not be enumerated',
+        correct: true,
+      },
+      {
+        title: 'The property will be enumerated',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 67,
+    question: 'What will be the step of the interpreter in a jump statement when an exception is thrown?',
+    options: [
+      {
+        title: 'The interpreter stops its workThe interpreter stops its work',
+        correct: false,
+      },
+      {
+        title: 'The interpreter throws another exception',
+        correct: false,
+      },
+      {
+        title: 'The interpreter jumps to the nearest enclosing exception handler',
+        correct: true,
+      },
+      {
+        title: 'The interpreter throws an error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 68,
+    question: `What will be the role of the continue keyword in the following JavaScript code snippet?
+    while (a != 0)
+    {
+       if (a == 1) 
+           continue;
+       else 
+           a++;
+    }`,
+    options: [
+      {
+        title: 'The continue keyword restarts the loop',
+        correct: false,
+      },
+      {
+        title: 'The continue keyword skips the next iteration',
+        correct: false,
+      },
+      {
+        title: 'The continue keyword skips the rest of the statements in that iteration',
+        correct: true,
+      },
+      {
+        title: 'The continue keyword breaks out of the loop',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 69,
+    question: `What could be the task of the statement debugger in the following JavaScript code?
+    function f(o) 
+    {
+         if (o === undefined) debugger;
+    }`,
+    options: [
+      {
+        title: 'It does nothing but a simple breakpoint',
+        correct: true,
+      },
+      {
+        title: 'It debugs the error in that statement and restarts the statements execution',
+        correct: false,
+      },
+      {
+        title: 'It is used as a keyword that debugs the entire program at once',
+        correct: false,
+      },
+      {
+        title: 'It is used to find error in the statement',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 70,
+    question: 'Among the keywords below, which one is not a statement?',
+    options: [
+      {
+        title: 'debugger',
+        correct: false,
+      },
+      {
+        title: 'with',
+        correct: false,
+      },
+      {
+        title: 'if',
+        correct: false,
+      },
+      {
+        title: 'use strict',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 71,
+    question: `What will be the output of the following JavaScript code?
+    let a = 0;
+    for(a;a<5;a++);
+    console.log(a);`,
+    options: [
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+      {
+        title: '4',
+        correct: false,
+      },
+      {
+        title: '5',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 72,
+    question: 'The unordered collection of properties, each of which has a name and a value is called',
+    options: [
+      {
+        title: 'String',
+        correct: false,
+      },
+      {
+        title: 'Object',
+        correct: true,
+      },
+      {
+        title: 'Serialized Object',
+        correct: false,
+      },
+      {
+        title: 'Array',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 73,
+    question: 'The object has three object attributes namely',
+    options: [
+      {
+        title: 'Class, parameters, objects extensible flag',
+        correct: false,
+      },
+      {
+        title: ' Prototype, class, objects parameters',
+        correct: false,
+      },
+      {
+        title: 'Prototype, class, objects extensible flag',
+        correct: true,
+      },
+      {
+        title: 'Native object, Classes and Interfaces and Objects extensible flag',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 74,
+    question: `Native object, Classes and Interfaces and Objects extensible flag
+    var book = {
+      "main title": "JavaScript", 
+      'sub-title': "The Definitive Guide", 
+      "for": "all audiences", 
+      author: { 
+                 firstname: "David", 
+                 surname: "Flanagan" 
+              }
+    };`,
+    options: [
+      {
+        title: 'properties',
+        correct: false,
+      },
+      {
+        title: 'property values',
+        correct: false,
+      },
+      {
+        title: 'property names',
+        correct: true,
+      },
+      {
+        title: 'objects',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 75,
+    question: 'A linkage of series of prototype objects is called as',
+    options: [
+      {
+        title: 'prototype stack',
+        correct: false,
+      },
+      {
+        title: 'prototype chain',
+        correct: true,
+      },
+      {
+        title: 'prototype class',
+        correct: false,
+      },
+      {
+        title: 'prototypes',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 76,
+    question: 'To determine whether one object is the prototype of (or is part of the prototype chain of) another object, one should use the',
+    options: [
+      {
+        title: 'isPrototypeOf() method',
+        correct: true,
+      },
+      {
+        title: 'equals() method',
+        correct: false,
+      },
+      {
+        title: '=== operator',
+        correct: false,
+      },
+      {
+        title: '== operator',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 77,
+    question: `What is the prototype represents in the following JavaScript code snippet?
+    function f() {};`,
+    options: [
+      {
+        title: 'The interpreter stops its workThe interpreter stops its work',
+        correct: false,
+      },
+      {
+        title: 'The interpreter throws another exception',
+        correct: true,
+      },
+      {
+        title: 'The interpreter jumps to the nearest enclosing exception handler',
+        correct: false,
+      },
+      {
+        title: 'The interpreter throws an error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 78,
+    question: 'The purpose of extensible attribute is to',
+    options: [
+      {
+        title: 'make all of the own properties of that object non configurable',
+        correct: false,
+      },
+      {
+        title: 'to configure and bring a writable property',
+        correct: false,
+      },
+      {
+        title: 'lock down objects into a known state and prevent outside tampering',
+        correct: true,
+      },
+      {
+        title: 'to include new properties into the object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 79,
+    question: 'The basic purpose of the toLocaleString() is to',
+    options: [
+      {
+        title: 'return a localised object representation',
+        correct: false,
+      },
+      {
+        title: 'return a parsed string',
+        correct: false,
+      },
+      {
+        title: 'return a local time in the string format',
+        correct: false,
+      },
+      {
+        title: 'return a localized string representation of the object',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 80,
+    question: `What will be the output of the following JavaScript code?
+    const object1 = {  
+      property1: 20
+    };  
+    console.log(Object.is(object1));`,
+    options: [
+      {
+        title: '12',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 81,
+    question: `What is the observation made in the following JavaScript code?
+    var count = [1,,3];`,
+    options: [
+      {
+        title: 'The omitted value takes undefined',
+        correct: true,
+      },
+      {
+        title: 'This results in an error',
+        correct: false,
+      },
+      {
+        title: 'This results in an exception',
+        correct: false,
+      },
+      {
+        title: 'The omitted value takes an integer value',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 82,
+    question: 'The pop() method of the array does which of the following task?',
+    options: [
+      {
+        title: 'decrements the total length by 1',
+        correct: true,
+      },
+      {
+        title: 'increments the total length by 1',
+        correct: false,
+      },
+      {
+        title: 'prints the first element but no effect on the length',
+        correct: false,
+      },
+      {
+        title: 'updates the element',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 83,
+    question: `What is the observation made in the following JavaScript code?
+    if (!a[i]) continue;`,
+    options: [
+      {
+        title: 'Skips the defined elements',
+        correct: false,
+      },
+      {
+        title: 'Skips the existent elements',
+        correct: false,
+      },
+      {
+        title: 'Skips the null elements',
+        correct: true,
+      },
+      {
+        title: 'Skips the defined & existent elements',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 84,
+    question: 'What will happen if reverse() and join() methods are used simultaneously?',
+    options: [
+      {
+        title: 'Reverses and stores in the same array',
+        correct: true,
+      },
+      {
+        title: 'Reverses and concatenates the elements of the array',
+        correct: false,
+      },
+      {
+        title: 'Reverses',
+        correct: false,
+      },
+      {
+        title: 'Stores the elements of an array in normal order',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 85,
+    question: `What will be the possible output of the following JavaScript code?
+    var a = [1,2,3,4,5];
+    a.slice(0,3);`,
+    options: [
+      {
+        title: 'Returns [1,2,3]',
+        correct: true,
+      },
+      {
+        title: 'Returns [4,5]',
+        correct: false,
+      },
+      {
+        title: 'Returns [1,2,3,4]',
+        correct: false,
+      },
+      {
+        title: 'Returns [1,2,3,4,5]',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 86,
+    question: 'The primary purpose of the array map() function is that it',
+    options: [
+      {
+        title: 'maps the elements of another array into itself',
+        correct: false,
+      },
+      {
+        title: 'passes each element of the array and returns the necessary mapped elements',
+        correct: false,
+      },
+      {
+        title: 'passes each element of the array on which it is invoked to the function you specify, and returns an array containing the values returned by that function',
+        correct: true,
+      },
+      {
+        title: 'pass the elements of the array into another array',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 87,
+    question: 'The reduce and reduceRight methods follow a common operation called',
+    options: [
+      {
+        title: 'filter and fold',
+        correct: false,
+      },
+      {
+        title: 'inject and fold',
+        correct: true,
+      },
+      {
+        title: 'finger and fold',
+        correct: false,
+      },
+      {
+        title: 'fold',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 88,
+    question: 'The method or operator used to identify the array is',
+    options: [
+      {
+        title: 'isarrayType()',
+        correct: false,
+      },
+      {
+        title: '==',
+        correct: false,
+      },
+      {
+        title: '===',
+        correct: false,
+      },
+      {
+        title: 'typeof',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 89,
+    question: `What will be the output of the following JavaScript code?
+    var values=["one","two","Three"];  
+    var ans=values.shift();  
+    document.writeln(ans);`,
+    options: [
+      {
+        title: 'one',
+        correct: true,
+      },
+      {
+        title: 'two',
+        correct: false,
+      },
+      {
+        title: 'three',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 90,
+    question: `What will be the output of the following JavaScript code?
+    var arr=[1,2,3];  
+    var rev=arr.reverse();  
+    document.writeln(rev);`,
+    options: [
+      {
+        title: '1, 2, 3',
+        correct: false,
+      },
+      {
+        title: '3, 2, 1',
+        correct: true,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: '1',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 91,
+    question: 'The function definitions in JavaScript begins with',
+    options: [
+      {
+        title: 'Identifier and Parentheses',
+        correct: false,
+      },
+      {
+        title: 'Return type and Identifier',
+        correct: false,
+      },
+      {
+        title: 'Return type, Function keyword, Identifier and Parentheses',
+        correct: true,
+      },
+      {
+        title: 'Identifier and Return type',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 92,
+    question: `What will be the output of the following JavaScript code?
+    function printprops(o) 
+    {
+        for(var p in o)
+          console.log(p + ": " + o[p] + "n");
+    }`,
+    options: [
+      {
+        title: 'Prints the contents of each property of o',
+        correct: false,
+      },
+      {
+        title: 'Returns undefined',
+        correct: true,
+      },
+      {
+        title: 'Prints only one property',
+        correct: false,
+      },
+      {
+        title: 'Prints the address of elements',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 93,
+    question: 'When does the function name become optional in JavaScript?',
+    options: [
+      {
+        title: 'When the function is defined as a looping statement',
+        correct: false,
+      },
+      {
+        title: 'When the function is defined as expressions',
+        correct: true,
+      },
+      {
+        title: 'When the function is predefined',
+        correct: false,
+      },
+      {
+        title: 'When the function is called',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 94,
+    question: 'What is the purpose of a return statement in a function?',
+    options: [
+      {
+        title: 'Returns the value and continues executing rest of the statements, if any',
+        correct: false,
+      },
+      {
+        title: 'Returns the value and stops the program',
+        correct: false,
+      },
+      {
+        title: 'Returns the value and stops executing the function',
+        correct: false,
+      },
+      {
+        title: 'Stops executing the function and returns the value',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 95,
+    question: 'What will happen if a return statement does not have an associated expression?',
+    options: [
+      {
+        title: 'It returns the value 0',
+        correct: false,
+      },
+      {
+        title: 'It will throw an exception',
+        correct: false,
+      },
+      {
+        title: 'It returns the undefined value',
+        correct: true,
+      },
+      {
+        title: 'It will throw an error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 96,
+    question: 'A function with no return value is called',
+    options: [
+      {
+        title: 'Procedures',
+        correct: true,
+      },
+      {
+        title: 'Method',
+        correct: false,
+      },
+      {
+        title: 'Static function',
+        correct: false,
+      },
+      {
+        title: 'Dynamic function',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 97,
+    question: 'The function stops its execution when it encounters?',
+    options: [
+      {
+        title: 'continue statement',
+        correct: false,
+      },
+      {
+        title: 'break statement',
+        correct: false,
+      },
+      {
+        title: 'goto statement',
+        correct: false,
+      },
+      {
+        title: 'return statement',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 98,
+    question: 'Which is an equivalent code to invoke a function m of class o that expects two arguments x and y?',
+    options: [
+      {
+        title: 'o(x,y);',
+        correct: false,
+      },
+      {
+        title: 'o.m(x) && o.m(y);',
+        correct: false,
+      },
+      {
+        title: 'm(x,y);',
+        correct: false,
+      },
+      {
+        title: 'o.m(x,y);',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 99,
+    question: `What will be the equivalent code of the following JavaScript code?
+    o.m(x,y);`,
+    options: [
+      {
+        title: 'o.m(x) && o.m(y);',
+        correct: false,
+      },
+      {
+        title: 'o[“m”](x,y);',
+        correct: true,
+      },
+      {
+        title: 'o(m)[“x”,”y”];',
+        correct: false,
+      },
+      {
+        title: 'o.m(x && y);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 100,
+    question: `What will be the output of the following JavaScript code?
+    function info()
+    {  
+        int a=1;
+        int b=2;
+        return a*b;  
+    }  
+    document.write(info());`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: true,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
         correct: false,
       },
     ],

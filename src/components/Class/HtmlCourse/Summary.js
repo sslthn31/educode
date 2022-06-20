@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-const SummaryJs = () => {
+const SummaryHtml = () => {
   const history = useHistory();
   const location = useLocation();
   console.log(location.state);
@@ -22,11 +22,11 @@ const SummaryJs = () => {
     <div className="summaryjs">
       <h2>CONGRATULATION</h2>
       <h3>
-        You just Finished <b>JAVASCRIPT BASIC CLASS</b>
+        You just Finished <b>HTML BASIC CLASS</b>
       </h3>
       <div className="btn-claim">
         <button>
-          <a href="https://forms.gle/NqN744YkD5BG5wNt7" rel="noreferrer" target="_blank">
+          <a href="https://forms.gle/Vd4hN1i4sputuaAm8" rel="noreferrer" target="_blank">
             Claim Your Certificate
           </a>
         </button>
@@ -35,4 +35,4 @@ const SummaryJs = () => {
   );
 };
 
-export default SummaryJs;
+export default SummaryHtml;

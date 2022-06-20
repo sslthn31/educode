@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { JsQuestionData } from '../../certificationquestiondata/Jsquestiondata';
+import { CssQuestionData } from '../../certificationquestiondata/Cssquestiondata';
 import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
 
-const JsExamTest = () => {
+const CssExamTest = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
-  const [quiz, setQuiz] = useState(JsQuestionData);
+  const [quiz, setQuiz] = useState(CssQuestionData);
   const { id, question, options } = quiz[currentIndex];
   const [score, setScore] = useState({
     correct: 0,
@@ -84,7 +84,7 @@ const JsExamTest = () => {
           <button
             onClick={() =>
               history.push({
-                pathname: '/summary',
+                pathname: '/summaryHtml',
                 state: {
                   quiz,
                   score,
@@ -104,4 +104,4 @@ const JsExamTest = () => {
   );
 };
 
-export default JsExamTest;
+export default CssExamTest;

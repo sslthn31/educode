@@ -3,12 +3,12 @@ import Axios from 'axios';
 import { Link } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 
-const JScourse = () => {
+const CssCourse = () => {
   const [tangkep, setTangkep] = useState([]);
   const [counter, setCounter] = useState(1);
   const [loading, setLoading] = useState(false);
   const nangkepApi = (page) => {
-    Axios.get(`https://educode-api-sslthn31.herokuapp.com/v1/course/jscourse?page=${page}&perPage=1`)
+    Axios.get(`https://educode-api-sslthn31.herokuapp.com/v1/course/csscourse?page=${page}&perPage=1`)
       .then((res) => {
         console.log(res.data.data);
         setTangkep(res.data.data);
@@ -24,7 +24,7 @@ const JScourse = () => {
   }, [counter]);
 
   const nextButton = () => {
-    setCounter(counter >= 9 ? 9 : counter + 1);
+    setCounter(counter >= 10 ? 10 : counter + 1);
     setLoading();
     console.log(counter);
   };
@@ -42,7 +42,6 @@ const JScourse = () => {
             <div className="course-container" key={datanya._id}>
               <h2>{datanya.title}</h2>
               <div className="course-desc">
-                <p>{datanya.title}</p>
                 <p>{datanya.description}</p>
               </div>
               <div className="course-desc-image">
@@ -59,10 +58,16 @@ const JScourse = () => {
           );
         })}
         <div className="course-button-list">
-          {counter === 1 ? null : <button onClick={prevButton}>PREV</button>}
-          {counter === 9 ? (
+          {counter === 1 ? (
+            <button disabled onClick={prevButton}>
+              PREV
+            </button>
+          ) : (
+            <button onClick={prevButton}>PREV</button>
+          )}
+          {counter === 10 ? (
             <button>
-              <Link to="/JsExamTest" className="test-link">
+              <Link to="/CssExamTest" className="test-link">
                 TES
               </Link>
             </button>
@@ -80,4 +85,4 @@ const JScourse = () => {
   );
 };
 
-export default JScourse;
+export default CssCourse;
