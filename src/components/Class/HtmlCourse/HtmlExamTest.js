@@ -13,12 +13,16 @@ const HtmlExamTest = () => {
     correct: 0,
     false: 0,
   });
+  let history = useHistory();
+  const timesUp = () => {
+    history.push('/');
+    alert('Times Up');
+  };
   const MENIT = 90 * 60;
   const time = new Date();
   time.setSeconds(time.getSeconds() + MENIT);
-  const { seconds, minutes, hours } = useTimer({ expiryTimestamp: time, onExpire: () => alert('onExpire called') });
+  const { seconds, minutes, hours } = useTimer({ expiryTimestamp: time, onExpire: () => timesUp() });
 
-  const history = useHistory();
   //   console.log(currentIndex);
   //   console.log(quiz.length - 1);
 

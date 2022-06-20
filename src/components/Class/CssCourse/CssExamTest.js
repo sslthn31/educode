@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { CssQuestionData } from '../../certificationquestiondata/Cssquestiondata';
 import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
+import { useTimer } from 'react-timer-hook';
 
 const CssExamTest = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
@@ -12,8 +13,15 @@ const CssExamTest = () => {
     correct: 0,
     false: 0,
   });
-
-  const history = useHistory();
+  let history = useHistory();
+  const timesUp = () => {
+    history.push('/');
+    alert('Times Up');
+  };
+  const MENIT = 90 * 60;
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + MENIT);
+  const { seconds, minutes, hours } = useTimer({ expiryTimestamp: time, onExpire: () => timesUp() });
   //   console.log(currentIndex);
   //   console.log(quiz.length - 1);
 
@@ -56,7 +64,9 @@ const CssExamTest = () => {
   //- Score : {score.correct} : {score.false}
   return (
     <div className="quiz">
-      <h3>Test is Starting</h3>
+      <h3>
+        Test is Starting - {hours}:{minutes}:{seconds}
+      </h3>
       <div className="quiz-card ">
         <div className="card-header">
           <h4>
