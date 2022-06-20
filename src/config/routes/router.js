@@ -15,6 +15,8 @@ import JsExamTest from '../../components/Class/JScourse/JsExamTest';
 import SummaryJs from '../../components/Class/JScourse/Summary';
 import SummaryCss from '../../components/Class/CssCourse/Summary';
 import SummaryHtml from '../../components/Class/HtmlCourse/Summary';
+import Success from '../../components/prototype/shortcut/Success';
+import Fail from '../../components/prototype/shortcut/Fail';
 import Footer from '../../components/Footer';
 const Router = () => {
   return (
@@ -35,6 +37,8 @@ const Router = () => {
           <Route path="/summaryCss" component={SummaryCss} />
           <Route path="/summary" component={SummaryJs} />
           <Route path="/examStart" component={Quiz} />
+          <Route path="/success" component={Success} />
+          <Route path="/fail" component={Fail} />
           <Route path="/summaryprototype" component={Summary} />
         </Switch>
         <Footer />
