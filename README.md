@@ -1,4 +1,5 @@
 - E-learning (done)
-- Online Exam (on progress)
-- Online Certificate (on progress)
-- Layout (75%)
+- Online Exam (done)
+- Online Certificate (done)
+- Layout (need improvment)
+- observer (need design)
