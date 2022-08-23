@@ -4,6 +4,9 @@ import { JsQuestionData } from '../../certificationquestiondata/Jsquestiondata';
 import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
 import { useTimer } from 'react-timer-hook';
+import Axios from 'axios';
+
+
 const JsExamTest = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
   const [quiz, setQuiz] = useState(JsQuestionData);
@@ -11,7 +14,8 @@ const JsExamTest = () => {
   const [score, setScore] = useState({
     correct: 0,
     false: 0,
-  });
+  }); 
+
   let history = useHistory();
   const timesUp = () => {
     history.push('/');
@@ -49,16 +53,41 @@ const JsExamTest = () => {
     );
   };
 
-  useEffect(() => {
-    const checkScore = () => {
-      const questionAnswered = quiz.filter((item) => item.selected);
-      const questionCorrect = questionAnswered.filter((item) => item.options.find((options) => options.correct && options.selected === options.correct));
-      setScore({
-        correct: questionCorrect.length,
-        false: quiz.length - questionCorrect.length,
-      });
-    };
 
+  useEffect(() => {
+    const ngeMap = quiz.map((nomor) => {
+      return nomor.id
+    })
+  
+    const tanggal = new Date();
+    
+    const postUserData = () => {
+      Axios.post('https://educode-api-sslthn31.herokuapp.com/v1/view/observer', {
+      course: 'JS Course',
+      ipAdress: '123.456.789',
+      question: ngeMap,
+      startedAt: tanggal,
+    })
+    .then((res) => {
+      console.log("success")
+      console.log(res)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+    }
+
+    postUserData();
+
+    
+  const checkScore = () => {
+    const questionAnswered = quiz.filter((item) => item.selected);
+    const questionCorrect = questionAnswered.filter((item) => item.options.find((options) => options.correct && options.selected === options.correct));
+    setScore({
+      correct: questionCorrect.length,
+      false: quiz.length - questionCorrect.length,
+    });
+  };
     checkScore();
   }, [quiz]);
   //- Score : {score.correct} : {score.false}

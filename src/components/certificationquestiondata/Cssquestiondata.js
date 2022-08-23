@@ -2237,4 +2237,4 @@ const shuffle = (array) => {
 };
 
 shuffle(CssQuestionData);
-console.log(shuffle(CssQuestionData));
+//console.log(shuffle(CssQuestionData));

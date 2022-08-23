@@ -18,6 +18,8 @@ import SummaryHtml from '../../components/Class/HtmlCourse/Summary';
 import Success from '../../components/prototype/shortcut/Success';
 import Fail from '../../components/prototype/shortcut/Fail';
 import Footer from '../../components/Footer';
+import Observer from '../../components/observer/observer';
+
 const Router = () => {
   return (
     <div>
@@ -40,6 +42,7 @@ const Router = () => {
           <Route path="/success" component={Success} />
           <Route path="/fail" component={Fail} />
           <Route path="/summaryprototype" component={Summary} />
+          <Route path="/observer" component={Observer} />
         </Switch>
         <Footer />
       </BrowserRouter>
