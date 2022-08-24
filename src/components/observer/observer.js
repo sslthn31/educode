@@ -30,6 +30,7 @@ useEffect(() => {
                         <div className="user">
                             <p>{data.course}</p>
                             <p>{data.ipAdress}</p>
+                            <p>{data.startedAt}</p>
                             <ul style={{
                                 display: "flex",
                                 flexDirection: "row",

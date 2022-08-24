@@ -5,10 +5,12 @@ import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
 import { useTimer } from 'react-timer-hook';
 import Axios from 'axios';
+import axios from 'axios';
 
 
 const JsExamTest = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
+  const [ipUser, setIpUser] = useState([]);
   const [quiz, setQuiz] = useState(JsQuestionData);
   const { id, question, options } = quiz[currentIndex];
   const [score, setScore] = useState({
@@ -52,19 +54,31 @@ const JsExamTest = () => {
       )
     );
   };
-
-
+  
+  
   useEffect(() => {
+    const fetchIpUser = () => {
+      axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_T5NqmEUit0eOk2w1dlymaTQHhMakD')
+      .then((res) => {
+        console.log(res)
+        setIpUser(res.data.ip);
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    }
+    fetchIpUser()
+    
     const ngeMap = quiz.map((nomor) => {
       return nomor.id
     })
-  
+
     const tanggal = new Date();
     
     const postUserData = () => {
       Axios.post('https://educode-api-sslthn31.herokuapp.com/v1/view/observer', {
       course: 'JS Course',
-      ipAdress: '123.456.789',
+      ipAdress: ipUser,
       question: ngeMap,
       startedAt: tanggal,
     })
