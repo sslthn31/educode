@@ -31,17 +31,17 @@ useEffect(() => {
                             <p>{data.course}</p>
                             <p>{data.ipAdress}</p>
                             <p>{data.startedAt}</p>
-                            <ul style={{
+                            <ol style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 flexWrap: 'wrap',
-                                listStyle: 'none'
+                                
                             }}>{data.question.map((index, current) =>{
                                     return(
-                                        <li style={{margin: "10px"}}>{index}</li>
+                                        <li style={{margin: "20px"}}>{index}</li>
                                     )
                                 })}
-                            </ul>
+                            </ol>
                         </div>
                     )
                 })}

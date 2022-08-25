@@ -2540,6 +2540,464 @@ export const JsQuestionData = [
       },
     ],
   },
+  {
+    id: 101,
+    question: `What kind of scoping does JavaScript use?`,
+    options: [
+      {
+        title: 'Literal',
+        correct: false,
+      },
+      {
+        title: 'Lexical',
+        correct: true,
+      },
+      {
+        title: 'Segmental',
+        correct: false,
+      },
+      {
+        title: 'Sequential',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 102,
+    question: `What must be done in order to implement Lexical Scoping?`,
+    options: [
+      {
+        title: 'Get the object',
+        correct: false,
+      },
+      {
+        title: 'Dereference the current scope chain',
+        correct: false,
+      },
+      {
+        title: 'Reference the current scope chain',
+        correct: true,
+      },
+      {
+        title: 'Return the value',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 103,
+    question: `What will be the output of the following JavaScript code?
+    function info()
+    {  
+        int a=1;
+        int b=2;
+        return a*b;  
+    }  
+    document.write(info());`,
+    options: [
+      {
+        title: 'Function objects',
+        correct: false,
+      },
+      {
+        title: 'Scope where functions variables are resolved',
+        correct: false,
+      },
+      {
+        title: 'Both Function objects and Scope where functions variables are resolved',
+        correct: true,
+      },
+      {
+        title: 'Function return value',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 104,
+    question: `Which of the following is not an example of closures?`,
+    options: [
+      {
+        title: 'Objects',
+        correct: false,
+      },
+      {
+        title: 'Variables',
+        correct: false,
+      },
+      {
+        title: 'Functions',
+        correct: false,
+      },
+      {
+        title: 'Graphics',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 105,
+    question: `Which of the following uses a lot of CPU cycles?`,
+    options: [
+      {
+        title: 'GUI',
+        correct: false,
+      },
+      {
+        title: 'Statically generated graphics',
+        correct: false,
+      },
+      {
+        title: 'Dynamically generated graphics',
+        correct: true,
+      },
+      {
+        title: 'Generic scoping',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 106,
+    question: ` What will be the function of the following JavaScript code?
+
+    var scope = "global scope";
+    function checkscope() 
+    {
+        var scope = "local scope"; 
+        function f() 
+        { 
+             return scope; 
+        }
+        return f;
+    }`,
+    options: [
+      {
+        title: 'Returns value null',
+        correct: false,
+      },
+      {
+        title: 'Returns exception',
+        correct: true,
+      },
+      {
+        title: 'Returns the value in scope',
+        correct: false,
+      },
+      {
+        title: 'Shows an error message',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 101,
+    question: `What is the fundamental rule of lexical scoping?`,
+    options: [
+      {
+        title: 'Functions are declared in the scope',
+        correct: false,
+      },
+      {
+        title: 'Functions are executed using scope chain',
+        correct: true,
+      },
+      {
+        title: 'Functions are declared outside the scope',
+        correct: false,
+      },
+      {
+        title: 'Variables are declared within the function',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 108,
+    question: `What is the opposite approach to the lexical scoping?`,
+    options: [
+      {
+        title: 'Literal scoping',
+        correct: false,
+      },
+      {
+        title: 'Static scoping',
+        correct: false,
+      },
+      {
+        title: 'Dynamic scoping',
+        correct: true,
+      },
+      {
+        title: 'Generic scoping',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 109,
+    question: `What is the purpose of the dynamic scoping?`,
+    options: [
+      {
+        title: 'Variables can be declared outside the scope',
+        correct: true,
+      },
+      {
+        title: 'Variables must be declared outside the scope',
+        correct: false,
+      },
+      {
+        title: 'Variables cannot be declared outside the scope',
+        correct: false,
+      },
+      {
+        title: 'Variable cannot be declared within the function',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 110,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    options: [
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: true,
+      },
+    ],
+  },
 ];
 
 const shuffle = (array) => {
