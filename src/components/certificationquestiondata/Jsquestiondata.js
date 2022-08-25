@@ -2552,4 +2552,4 @@ const shuffle = (array) => {
 };
 
 shuffle(JsQuestionData);
-console.log(shuffle(JsQuestionData));
+//console.log(shuffle(JsQuestionData));
