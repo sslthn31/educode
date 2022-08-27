@@ -60,7 +60,7 @@ const JsExamTest = () => {
     const fetchIpUser = () => {
       axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_T5NqmEUit0eOk2w1dlymaTQHhMakD')
       .then((res) => {
-        console.log(res)
+        console.log('ini 1', res);
         setIpUser(res.data.ip);
       })
       .catch((err) => {
@@ -74,26 +74,28 @@ const JsExamTest = () => {
     })
 
     const tanggal = new Date();
-    
-    const postUserData = () => {
-      Axios.post('https://educode-api-sslthn31.herokuapp.com/v1/view/observer', {
+  const postUserData = () => {
+    const dataBody = {
       course: 'JS Course',
       ipAdress: ipUser,
       question: ngeMap,
       startedAt: tanggal,
+    }
+    Axios({
+      method: 'POST',
+      url: 'https://educode-api-sslthn31.herokuapp.com/v1/view/observer',
+      data: dataBody,
     })
     .then((res) => {
       console.log("success")
-      console.log(res)
+      console.log('ini 2', res)
     })
     .catch((err) => {
       console.log(err)
     })
-    }
-
-    postUserData();
-
-    
+  }
+  postUserData() 
+  
   const checkScore = () => {
     const questionAnswered = quiz.filter((item) => item.selected);
     const questionCorrect = questionAnswered.filter((item) => item.options.find((options) => options.correct && options.selected === options.correct));
@@ -102,8 +104,8 @@ const JsExamTest = () => {
       false: quiz.length - questionCorrect.length,
     });
   };
-    checkScore();
-  }, [quiz]);
+  checkScore();
+  }, [quiz, ipUser]);
   //- Score : {score.correct} : {score.false}
   return (
     <div className="quiz">
