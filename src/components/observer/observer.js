@@ -23,7 +23,7 @@ useEffect(() => {
     return(
         <>
         <div className="observer">
-            <h1>INI OBSERVER</h1>
+            <h1>OBSERVER</h1>
             <div className="userlist">
                 {observerData.map((data, index) => {
                     return(
