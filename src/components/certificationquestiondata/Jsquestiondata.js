@@ -2780,100 +2780,768 @@ export const JsQuestionData = [
   },
   {
     id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    question: `The behaviour of the instances present of a class inside a method is defined by`,
     options: [
+      {
+        title: 'Method',
+        correct: false,
+      },
+      {
+        title: 'Classes',
+        correct: true,
+      },
+      {
+        title: 'Interfaces',
+        correct: false,
+      },
+      {
+        title: 'Classes and Interfaces',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 112,
+    question: `The keyword or the property that you use to refer to an object through which they were invoked is`,
+    options: [
+      {
+        title: 'from',
+        correct: false,
+      },
+      {
+        title: 'to',
+        correct: true,
+      },
+      {
+        title: 'this',
+        correct: false,
+      },
+      {
+        title: 'object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 113,
+    question: `What will be the output of the following JavaScript code?
+    var o = new F();
+    o.constructor === F`,
+    options: [
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
       {
         title: '1',
         correct: false,
       },
+    ],
+  },
+  {
+    id: 114,
+    question: `The basic difference between JavaScript and Java is`,
+    options: [
       {
-        title: '2',
+        title: 'There is no difference',
         correct: false,
       },
       {
-        title: '3',
+        title: 'Functions are considered as fields',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'Variables are specific',
+        correct: false,
+      },
+      {
+        title: 'Functions are values, and there is no hard distinction between methods and fields',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 115,
+    question: `The meaning for Augmenting classes is that`,
     options: [
       {
-        title: '1',
+        title: 'objects inherit prototype properties even in a dynamic state',
+        correct: true,
+      },
+      {
+        title: 'objects inherit prototype properties only in a dynamic state',
         correct: false,
       },
       {
-        title: '2',
+        title: 'objects inherit prototype properties in the static state',
         correct: false,
       },
       {
-        title: '3',
+        title: 'object doesnt inherit prototype properties in the static state',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 116,
+    question: `The property of JSON() method is `,
+    options: [
+      {
+        title: 'it can be invoked manually as object.JSON()',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'it will be automatically invoked by the compiler',
+        correct: false,
+      },
+      {
+        title: 'it is invoked automatically by the JSON.stringify() method',
+        correct: true,
+      },
+      {
+        title: 'it cannot be invoked in any form',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 117,
+    question: `When a class B can extend another class A, we say that?`,
+    options: [
+      {
+        title: 'A is the superclass and B is the subclass',
+        correct: true,
+      },
+      {
+        title: 'B is the superclass and A is the subclass',
+        correct: false,
+      },
+      {
+        title: 'Both A and B are the superclass',
+        correct: false,
+      },
+      {
+        title: 'Both A and B are the subclass',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 118,
+    question: `If A is the superclass and B is the subclass, then subclass inheriting the superclass can be represented as`,
+    options: [
+      {
+        title: 'B=inherit(A);',
+        correct: false,
+      },
+      {
+        title: 'B=A.inherit();',
+        correct: false,
+      },
+      {
+        title: 'B.prototype=inherit(A);',
+        correct: true,
+      },
+      {
+        title: 'B.prototype=inherit(A.prototype);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 119,
+    question: `The snippet that filters the filtered set is`,
+    options: [
+      {
+        title: 'var t=new FilteredSet(s, {function(s) {return !(x instanceof Set);});',
+        correct: true,
+      },
+      {
+        title: 'var t=new FilteredSet{function(s) {return !(x instanceof Set);});',
+        correct: false,
+      },
+      {
+        title: 'var t=new FilteredSet(s, {function(s) {return (x instanceof Set);});',
+        correct: false,
+      },
+      {
+        title: 'var t=new FilteredSet(s, {function(s) {return x;});',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 120,
+    question: `The method that can be used to create new properties and also to modify the attributes of existing properties is`,
+    options: [
+      {
+        title: 'Object.defineProperty()',
+        correct: false,
+      },
+      {
+        title: 'Object.defineProperties()',
+        correct: false,
+      },
+      {
+        title: 'Both Object.defineProperty() and Object.defineProperties()',
+        correct: true,
+      },
+      {
+        title: 'Object.inherit()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 121,
+    question: `What will be the output of the following JavaScript code?
+    const obj1 = 
+    {  
+        a: 10,  
+        b: 15,  
+        c: 18  
+    };  
+    const obj2 = Object.assign({c: 7, d: 1}, obj1);  
+    console.log(obj2.c, obj2.d);`,
+    options: [
+      {
+        title: '7,1',
+        correct: false,
+      },
+      {
+        title: '18,1',
+        correct: true,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 122,
+    question: `What will be the output of the following JavaScript code?
+    function person()
+    {  
+            this.name = 'rahul';  
+    }  
+    function obj() 
+    {  
+           obj.call(this)  
+    }  
+    obj.prototype = Object.create(person.prototype);  
+    const app = new obj();  
+    console.log(app.name);`,
+    options: [
+      {
+        title: 'undefined',
+        correct: false,
+      },
+      {
+        title: 'runtime error',
+        correct: false,
+      },
+      {
+        title: 'compilation error',
+        correct: false,
+      },
+      {
+        title: 'rahul',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 123,
+    question: `What will be the output of the following JavaScript code?
+    const object1 = {};  
+    Object.defineProperties(object1,
+    {  
+        property1: 
+            {  
+                 value: 10 
+            }  
+     });  
+    console.log(object1.property1);`,
     options: [
       {
-        title: '1',
+        title: '0',
         correct: false,
       },
+      {
+        title: '10',
+        correct: true,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 124,
+    question: `What will be the output of the following JavaScript code?
+    const prototype1 = {};  
+    const object1 = Object.create(prototype1);  
+    console.log(Object.getPrototypeOf(object1) === prototype1);`,
+    options: [
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 125,
+    question: `What will be the output of the following JavaScript code?
+    const obj1 = {  
+      property1: 2  
+    };  
+    Object.seal(object1);    
+    obj1.property1 =4;  
+    console.log(obj1.property1);  
+    delete obj1.property1;`,
+    options: [
       {
         title: '2',
         correct: false,
       },
       {
-        title: '3',
+        title: '4',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'Error',
+        correct: true,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 126,
+    question: `The four kinds of class members are`,
+    options: [
+      {
+        title: 'Instance methods, Instance fields, Static method, Dynamic method',
+        correct: false,
+      },
+      {
+        title: 'Instance fields, Instance methods, Class fields, Class methods',
+        correct: true,
+      },
+      {
+        title: 'Instance fields, Non-instance fields, Dynamic methods, Global methods',
+        correct: false,
+      },
+      {
+        title: 'Global methods, Local methods, Dynamic methods, Static methods',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 127,
+    question: `Different kinds of the object involved in a class definition are`,
+    options: [
+      {
+        title: 'Public object, Private object, Protected object',
+        correct: false,
+      },
+      {
+        title: 'B is the superclass and A is the subclass',
+        correct: false,
+      },
+      {
+        title: 'Both A and B are the superclass',
+        correct: true,
+      },
+      {
+        title: 'Both A and B are the subclass',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 128,
+    question: `The object whose properties are inherited by all instances of the class, and properties whose values are functions behaving like instance methods of the class, is`,
+    options: [
+      {
+        title: 'Instance object',
+        correct: false,
+      },
+      {
+        title: 'Constructor object',
+        correct: false,
+      },
+      {
+        title: 'Destructor object',
+        correct: false,
+      },
+      {
+        title: 'Prototype object',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 129,
+    question: `Which variables are used internally in object methods and are also globally visible?`,
     options: [
       {
-        title: '1',
+        title: 'Object properties',
         correct: false,
       },
       {
-        title: '2',
+        title: 'Variable properties',
+        correct: true,
+      },
+      {
+        title: 'Method properties',
         correct: false,
       },
       {
-        title: '3',
+        title: 'Internal properties',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 130,
+    question: `The class that represents the regular expressions is`,
+    options: [
+      {
+        title: 'RegExpObj',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'RegExpClass',
+        correct: false,
+      },
+      {
+        title: 'RegExp',
+        correct: true,
+      },
+      {
+        title: 'StringExp',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 131,
+    question: `The different variant of Date() constructor to create date object is/are
+    i. new Date(date)
+    ii. new Date(milliseconds)
+    iii. new Date(date string)
+    iv. new Date(year, month, date[hour, minute, second, millisecond])`,
+    options: [
+      {
+        title: 'i, ii and iii only',
+        correct: false,
+      },
+      {
+        title: 'ii, iii and iv only',
+        correct: true,
+      },
+      {
+        title: 'i, ii and iv only',
+        correct: false,
+      },
+      {
+        title: 'i, ii, iii and iv',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 132,
+    question: `Which is the correct code that returns a complex number that is the complex conjugate of this one?`,
+    options: [
+      {
+        title: 'Complex.prototype.conj = function() { return new Complex(this.r, -this.i); };',
+        correct: true,
+      },
+      {
+        title: 'Complex.prototype.conj = function() { return Complex(this.r, -this.i); };',
+        correct: false,
+      },
+      {
+        title: 'Complex.prototype.conj = function() { return (this.r, -this.i); };',
+        correct: false,
+      },
+      {
+        title: 'Complex.prototype.conj = function() { new Complex(this.r, -this.i); };',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 133,
+    question: `How can we make methods available on all objects?`,
+    options: [
+      {
+        title: 'Object.add(methods)',
+        correct: false,
+      },
+      {
+        title: 'Object.methods(add)',
+        correct: false,
+      },
+      {
+        title: 'Object.add.methods(…)',
+        correct: false,
+      },
+      {
+        title: 'Object.prototype',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 134,
+    question: `What is the procedure to add methods to HTMLElement so that they will be inherited by the objects that represent the HTML tags in the current document?`,
     options: [
       {
-        title: '1',
+        title: 'HTMLElement.prototype(…)',
         correct: false,
       },
+      {
+        title: 'HTMLElement.prototype',
+        correct: true,
+      },
+      {
+        title: 'HTML.addmethods()',
+        correct: false,
+      },
+      {
+        title: 'HTML.elements(add)',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 135,
+    question: `You can refresh the webpage in JavaScript by using`,
+    options: [
+      {
+        title: 'window.reload',
+        correct: false,
+      },
+      {
+        title: 'location.reload',
+        correct: true,
+      },
+      {
+        title: 'window.refresh',
+        correct: false,
+      },
+      {
+        title: 'page.refresh',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 136,
+    question: `What will be the output of the following JavaScript code?
+
+    emp={id:102,name:"Shyam Kumar",salary:40000}  
+    document.write(emp.id+" "+emp.name+" "+emp.salary);`,
+    options: [
+      {
+        title: '102 4000 Shyam Kumar',
+        correct: false,
+      },
+      {
+        title: '102 4000',
+        correct: true,
+      },
+      {
+        title: '102 Shyam Kumar 40000',
+        correct: false,
+      },
+      {
+        title: '102 shyam kumar 40000',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 137,
+    question: ` What will be the output of the following JavaScript code?
+    function emp(id,name)
+{  
+    this.id=id;  
+    this.name=name;    
+}  
+e=new emp(103,"Vimal Jaiswal");  
+ 
+document.write(e.id+" "+e.name");`,
+    options: [
+      {
+        title: '103 vimal jaiswal',
+        correct: false,
+      },
+      {
+        title: '103',
+        correct: false,
+      },
+      {
+        title: '103 Vimal Jaiswal',
+        correct: true,
+      },
+      {
+        title: 'Vimal jaiswal',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 138,
+    question: `What will be the output of the following JavaScript code?
+
+    var emp=new Object();  
+    emp.name="Ravi Malik";  
+    emp.salary=50000;  
+    document.write("emp.name+" "+emp.salary);`,
+    options: [
+      {
+        title: 'Ravi malik 5000',
+        correct: false,
+      },
+      {
+        title: 'Ravi Malik 50000',
+        correct: true,
+      },
+      {
+        title: 'Ravi malik',
+        correct: false,
+      },
+      {
+        title: '50000',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 139,
+    question: `What will be the output of the following JavaScript code?
+
+    function emp(name,salary)
+    {  
+         this.name=name;  
+         this.salary=salary;  
+     
+         this.changeSalary=changeSalary;  
+         function changeSalary(otherSalary)
+         {  
+             this.salary=otherSalary;  
+         }  
+    }  
+    e=new emp("Rahul",30000);  
+    e.changeSalary(45000);  
+    document.write("e.name+" "+e.salary);`,
+    options: [
+      {
+        title: 'Rahul 30000',
+        correct: false,
+      },
+      {
+        title: 'Rahul',
+        correct: true,
+      },
+      {
+        title: 'Rahul 45000',
+        correct: false,
+      },
+      {
+        title: '45000',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 140,
+    question: `What will be the output of the following JavaScript code?
+
+    const obj = { 10: 'arry', 21: 'barry', 23: 'carry' };  
+    console.log(Object.entries(obj)[2]);`,
+    options: [
+      {
+        title: '[“arry”, “10”]',
+        correct: true,
+      },
+      {
+        title: '[“10”,”arry”]',
+        correct: false,
+      },
+      {
+        title: '[“21”,barry”]',
+        correct: false,
+      },
+      {
+        title: '[“23”,”carry”]',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 141,
+    question: `The functions provide() and require() of Dojo toolkit and Googles Closure library are used for`,
+    options: [
+      {
+        title: 'declaring and loading modules',
+        correct: true,
+      },
+      {
+        title: 'declaring functions',
+        correct: false,
+      },
+      {
+        title: 'declaring modules',
+        correct: false,
+      },
+      {
+        title: 'loading modules',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 142,
+    question: `The maximum number of global symbols a module can define is `,
+    options: [
       {
         title: '2',
         correct: false,
@@ -2883,103 +3551,987 @@ export const JsQuestionData = [
         correct: false,
       },
       {
-        title: 'error',
+        title: '1',
+        correct: true,
+      },
+      {
+        title: '4',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 143,
+    question: `To define each of the set classes as a property of the sets object (namespace) for the module, the statement is`,
+    options: [
+      {
+        title: 'sets = sets.AbstractEnumerableSet.extend();',
+        correct: false,
+      },
+      {
+        title: 'sets.SingletonSet = sets.AbstractEnumerableSet.extend(…);',
+        correct: true,
+      },
+      {
+        title: 'sets.SingletonSet = sets.extend(…);',
+        correct: false,
+      },
+      {
+        title: 'sets = sets.extend(…);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 144,
+    question: `What will be the efficiency quotient of the following JavaScript statements?
+
+    var Set = sets.Set;
+    var s = new Set(1,2,3);`,
+    options: [
+      {
+        title: 'The programmer imports at once the frequently used values into the global namespace',
+        correct: true,
+      },
+      {
+        title: 'There is no efficiency quotient, the programmer tries to make it inefficient',
+        correct: false,
+      },
+      {
+        title: 'The programmer needs to import the Sets everytime he wants to use it',
+        correct: false,
+      },
+      {
+        title: 'the programmer imports the set everytime the statement is encountered',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 145,
+    question: `The scope of a function is also called as`,
+    options: [
+      {
+        title: 'Predefined function',
+        correct: false,
+      },
+      {
+        title: 'Module function',
+        correct: true,
+      },
+      {
+        title: 'Public function',
+        correct: false,
+      },
+      {
+        title: 'Private function',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 146,
+    question: `Modules that have more than one item in their API can`,
+    options: [
+      {
+        title: 'Assign itself to a global variable',
+        correct: false,
+      },
+      {
+        title: 'Invoke another module of the same kind',
+        correct: false,
+      },
+      {
+        title: 'Return a namespace object',
+        correct: true,
+      },
+      {
+        title: 'Invoke another module of the same kind',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 147,
+    question: `The provides() function and the exportsobject are used to `,
+    options: [
+      {
+        title: 'Register the modules API and Store their API',
+        correct: true,
+      },
+      {
+        title: 'Call the modules api',
+        correct: false,
+      },
+      {
+        title: 'Store the modules API',
+        correct: false,
+      },
+      {
+        title: 'Register the modules api',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 148,
+    question: ` What could be achieved by running the JavaScript code snippet below?
+
+    var sets = com.davidflanagan.collections.sets;`,
+    options: [
+      {
+        title: 'Importing a single module',
+        correct: false,
+      },
+      {
+        title: 'Importing a module partially',
+        correct: false,
+      },
+      {
+        title: 'Importing a namespace',
+        correct: false,
+      },
+      {
+        title: 'Importing the entire module',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 149,
+    question: `The properties() method is a`,
     options: [
       {
-        title: '1',
+        title: 'Enumerable method',
         correct: false,
       },
       {
-        title: '2',
+        title: 'Non-enumerable method',
+        correct: true,
+      },
+      {
+        title: 'Operational method',
         correct: false,
       },
+      {
+        title: 'calling method',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 150,
+    question: `What can be done in order to avoid the creation of global variables in JavaScript?`,
+    options: [
+      {
+        title: 'To use a method that defines all the variables',
+        correct: false,
+      },
+      {
+        title: 'To use an object that has the reference to all the variables',
+        correct: false,
+      },
+      {
+        title: 'To use an object as its namespace',
+        correct: true,
+      },
+      {
+        title: 'To use global functions',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 151,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = 123e5;
+    document.getElementById("demo").innerHTML = x ;
+    </script>`,
+    options: [
+      {
+        title: '0.0123',
+        correct: false,
+      },
+      {
+        title: '12300',
+        correct: true,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 152,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+     <script>
+    function myFunction() 
+    {
+       var res = "";
+       res = res + Number.isFinite(5-2) ;
+       document.getElementById("demo").innerHTML = res;
+    }
+    </script>`,
+    options: [
       {
         title: '3',
         correct: false,
       },
       {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
         title: 'error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 153,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+     <script>
+    function myFunction() 
+    {
+       var res = "";
+       res = res + Number.isFinite(0 / 0);
+       document.getElementById("demo").innerHTML = res;
+    }
+    </script>`,
+    options: [
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 154,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       var res = "";
+       res = res + Number.isInteger('123');
+       document.getElementById("demo").innerHTML = res;
+    }
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 155,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       var res = "";
+       res = res + Number.isInteger(0.5) + ": 0.5<br>";
+       document.getElementById("demo").innerHTML = res;
+    }
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 156,
+    question: `The $ present in the RegExp object is called a`,
+    options: [
+      {
+        title: 'character',
+        correct: false,
+      },
+      {
+        title: 'matcher',
+        correct: false,
+      },
+      {
+        title: 'metacharacter',
+        correct: true,
+      },
+      {
+        title: 'metadata',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 157,
+    question: `Consider the following JavaScript statement containing regular expressions and check if the pattern matches?
+    var text = "testing: 1, 2, 3"; 
+    var pattern = /d+/g;`,
+    options: [
+      {
+        title: 'text==pattern',
+        correct: false,
+      },
+      {
+        title: 'text.equals(pattern)',
+        correct: false,
+      },
+      {
+        title: 'text.test(pattern)',
+        correct: false,
+      },
+      {
+        title: 'pattern.test(text)',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 158,
+    question: `The regular expression to match any one character not between the brackets is`,
     options: [
       {
-        title: '1',
+        title: '[…]',
         correct: false,
       },
       {
-        title: '2',
+        title: '[^]',
         correct: false,
       },
       {
-        title: '3',
+        title: '[^…]',
+        correct: true,
+      },
+      {
+        title: '[\D]',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 159,
+    question: `What does /[^(]* regular expression indicate?`,
+    options: [
+      {
+        title: 'Match one or more characters that are not open parenthesis',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'Match zero or more characters that are open parenthesis',
+        correct: false,
+      },
+      {
+        title: 'Match zero or more characters that are not open parenthesis',
+        correct: true,
+      },
+      {
+        title: 'Match one or more characters that are open parenthesis',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 160,
+    question: `Match one or more characters that are open parenthesis`,
+    options: [
+      {
+        title: 'Matches the letter b preceded by the fewest number of as possible',
+        correct: true,
+      },
+      {
+        title: 'Matches the letter b preceded by any number of a',
+        correct: false,
+      },
+      {
+        title: 'Matches letter a preceded by letter b, in the stack order',
+        correct: false,
+      },
+      {
+        title: 'Matches letter a present in the string',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 161,
+    question: `What does the subexpression /java(script)?/ result in?`,
+    options: [
+      {
+        title: 'It matches “java” followed by the optional “script”',
+        correct: true,
+      },
+      {
+        title: ' It matches “java” followed by any number of “script”',
+        correct: false,
+      },
+      {
+        title: ' It matches “java” followed by a minimum of one “script',
+        correct: false,
+      },
+      {
+        title: 'It matches “java” followed by a single “script”',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 162,
+    question: `What is the most essential purpose of parentheses in regular expressions?`,
+    options: [
+      {
+        title: 'Define pattern matching techniques',
+        correct: false,
+      },
+      {
+        title: 'Define subpatterns within the complete pattern',
+        correct: true,
+      },
+      {
+        title: 'Define portion of strings in the regular expression',
+        correct: false,
+      },
+      {
+        title: 'Define portion of strings in the regular expression',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 163,
+    question: `The method that performs the search-and-replace operation to strings for pattern matching is`,
+    options: [
+      {
+        title: 'searchandreplace()',
+        correct: false,
+      },
+      {
+        title: 'add()',
+        correct: false,
+      },
+      {
+        title: 'edit()',
+        correct: false,
+      },
+      {
+        title: 'replace()',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 164,
+    question: `What would be the result of the following statement in JavaScript using regular expression methods?`,
     options: [
+      {
+        title: 'Returns [“123″”456″”789”]',
+        correct: false,
+      },
+      {
+        title: 'Returns [“123″,”456″,”789”]',
+        correct: true,
+      },
+      {
+        title: 'Returns [1,2,3,4,5,6,7,8,9]',
+        correct: false,
+      },
+      {
+        title: 'Throws an exception',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 165,
+    question: `What will be the purpose of exec() in the following JavaScript code?
+    var pattern = /Java/g;
+    var text = "JavaScript is more fun than Java!";
+    var result;
+    while ((result = pattern.exec(text)) != null) 
+    {
+        alert("Matched '" + result[0] + "'" +" at position " + result.index +"; 
+              next search begins at " + pattern.lastIndex);
+    }
+`,
+    options: [
+      {
+        title: 'Returns the same kind of array whether or not the regular expression has the global g flag',
+        correct: true,
+      },
+      {
+        title: 'Returns different arrays in the different turns of iterations',
+        correct: false,
+      },
+      {
+        title: ' Return a sub part of the array',
+        correct: false,
+      },
+      {
+        title: 'Returns a null value',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 166,
+    question: `What will be the output of the following JavaScript code?
+    console.log(Pattern.matches("[amn]", "abcd"));`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+      {
+        title: 'a',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 167,
+    question: `What will be the output of the following JavaScript code?
+
+    console.log(Pattern.matches("[amn]?", "a"));`,
+    options: [
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+      {
+        title: 'bcd',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 168,
+    question: `What will be the output of the following JavaScript code?
+
+    console.log(Pattern.matches("\\d", "1"));`,
+    options: [
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
       {
         title: '1',
         correct: false,
       },
+    ],
+  },
+  {
+    id: 169,
+    question: `What will be the output of the following JavaScript code?
+
+    Console.log(Pattern.matches("[adf]+", "a"));`,
+    options: [
       {
-        title: '2',
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
         correct: false,
       },
       {
-        title: '3',
+        title: 'undefined',
         correct: false,
       },
       {
-        title: 'error',
+        title: '0',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 170,
+    question: `What will be the output of the following JavaScript code?
+
+    console.log(Pattern.matches("[^abc]", "aemngq"));`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+      {
+        title: '1',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 171,
+    question: `The Crockfords subset does not include which function in JavaScript?`,
+    options: [
+      {
+        title: 'eval()',
+        correct: true,
+      },
+      {
+        title: 'coeval()',
+        correct: false,
+      },
+      {
+        title: 'equal()',
+        correct: false,
+      },
+      {
+        title: 'equivalent()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 172,
+    question: `What does javascript use instead of == and !=?`,
+    options: [
+      {
+        title: 'It uses bitwise checking',
+        correct: false,
+      },
+      {
+        title: 'It uses === and !== instead',
+        correct: true,
+      },
+      {
+        title: 'It uses equals() and notequals() instead',
+        correct: false,
+      },
+      {
+        title: 'It uses equalto()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 173,
+    question: `What is being imposed on each subset to ensure that it conforms to the subset?`,
+    options: [
+      {
+        title: 'A parser to parse the code',
+        correct: false,
+      },
+      {
+        title: 'A parser that parses and adds to the subset',
+        correct: false,
+      },
+      {
+        title: 'A static verifier that parses code',
+        correct: true,
+      },
+      {
+        title: 'A predefined function to parse the code',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 174,
+    question: `Why was “The Good Parts” designed as a language subset in JavaScript?`,
+    options: [
+      {
+        title: 'To improve programmer flexibility',
+        correct: false,
+      },
+      {
+        title: 'To balance the workload of the programmer',
+        correct: false,
+      },
+      {
+        title: 'To create an in-built compiler and interpreter',
+        correct: false,
+      },
+      {
+        title: 'To improve programmer productivity',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 175,
+    question: ` Which is the subset that is a secure container designed for the purpose of safely running untrusted JavaScript?`,
     options: [
       {
-        title: '1',
+        title: 'Sandbox',
+        correct: true,
+      },
+      {
+        title: 'The Good Parts',
         correct: false,
       },
       {
-        title: '2',
+        title: 'Both Sandbox and Good Parts',
         correct: false,
       },
       {
-        title: '3',
+        title: 'Web browser',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 176,
+    question: `Why is this keyword not preferred in JavaScript?`,
+    options: [
+      {
+        title: 'Highly memory consuming',
         correct: false,
       },
       {
-        title: 'error',
+        title: 'Functions should access the global objects',
+        correct: false,
+      },
+      {
+        title: 'Functions should not access the global objects',
+        correct: true,
+      },
+      {
+        title: 'Very inefficient to use',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 177,
+    question: `Which are the two functions that are not allowed in any secure subset?`,
+    options: [
+      {
+        title: 'evaluate() and restrict()',
+        correct: false,
+      },
+      {
+        title: 'eval() and the Function() constructor',
+        correct: true,
+      },
+      {
+        title: 'debugger() and test()',
+        correct: false,
+      },
+      {
+        title: 'eval() and debugger()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 178,
+    question: `Which is the object that defines methods that allow complete control over page content?`,
+    options: [
+      {
+        title: 'The client-side document object',
+        correct: true,
+      },
+      {
+        title: 'The server-side document object',
+        correct: false,
+      },
+      {
+        title: 'Both client-side and server-side document object',
+        correct: false,
+      },
+      {
+        title: 'Web document object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 179,
+    question: `Which was one of the first security subsets proposed?`,
+    options: [
+      {
+        title: 'FBJS',
+        correct: false,
+      },
+      {
+        title: 'Caja',
+        correct: false,
+      },
+      {
+        title: 'dojox.secure',
+        correct: false,
+      },
+      {
+        title: 'ADSafe',
         correct: true,
       },
     ],
   },
   {
-    id: 111,
-    question: `Which of the algorithmic languages is not lexical scoping standardized in?`,
+    id: 180,
+    question: `Which is the subset that transforms web content into secure modules that can be safely hosted on a web page?`,
     options: [
+      {
+        title: 'Microsoft Web Sandbox',
+        correct: false,
+      },
+      {
+        title: 'ADsafe',
+        correct: false,
+      },
+      {
+        title: 'Caja',
+        correct: false,
+      },
+      {
+        title: 'dojox.secure',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 181,
+    question: `What will be the output of the following JavaScript code?
+    var set = new Set();  
+    set.add("one");  
+    set.add("two");    
+    for (let elements of set) 
+    {  
+        document.writeln(elements+" ");  
+    }`,
+    options: [
+      {
+        title: 'one',
+        correct: false,
+      },
+      {
+        title: 'two',
+        correct: false,
+      },
+      {
+        title: 'one two',
+        correct: true,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 182,
+    question: `What will be the output of the following JavaScript code?
+
+    set.add("AngularJS");  
+    set.add("Bootstrap");    
+    set.delete("Bootstrap");  
+    document.writeln(set.size);`,
+    options: [
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '1',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 183,
+    question: `What will be the output of the following JavaScript code?
+
+    set.add("one");  
+    set.add("two");  
+    set.add("three");    
+    set.clear();  
+    document.writeln(set.size);`,
+    options: [
+      {
+        title: 'one',
+        correct: false,
+      },
       {
         title: '1',
         correct: false,
@@ -2989,12 +4541,460 @@ export const JsQuestionData = [
         correct: false,
       },
       {
-        title: '3',
+        title: '0',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 184,
+    question: `What will be the output of the following JavaScript code?
+
+    set.add("one");  
+    set.add("two”);
+    var itr=set.values();  
+    document.writeln(itr.next().value);`,
+    options: [
+      {
+        title: 'one',
+        correct: true,
+      },
+      {
+        title: 'two',
         correct: false,
       },
       {
         title: 'error',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 185,
+    question: `What will be the output of the following JavaScript code?
+
+    set.add("1");  
+    set.add("2");    
+    document.writeln(set.has("3"));`,
+    options: [
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
         correct: true,
+      },
+      {
+        title: '2',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 186,
+    question: ` What will be the output of the following JavaScript code?
+    const pi=3.14;
+    var pi=4;
+    console.log(pi);`,
+    options: [
+      {
+        title: 'This will flash an error',
+        correct: true,
+      },
+      {
+        title: 'Prints 4',
+        correct: false,
+      },
+      {
+        title: 'Prints 3.14',
+        correct: false,
+      },
+      {
+        title: 'Ambiguity',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 187,
+    question: `The let keyword cannot be used`,
+    options: [
+      {
+        title: 'as a substitute of var',
+        correct: false,
+      },
+      {
+        title: 'as a block statement to define new variables',
+        correct: false,
+      },
+      {
+        title: 'to define variables that are scoped to a single expression',
+        correct: false,
+      },
+      {
+        title: 'in a else if loop, as a substitute for var',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 188,
+    question: `The main difference between the variables declared with var and with let is`,
+    options: [
+      {
+        title: 'var is confined to a particular function but let is not',
+        correct: false,
+      },
+      {
+        title: 'let is confined to a particular function but var is not',
+        correct: true,
+      },
+      {
+        title: 'var defines values based on conditions but let does not',
+        correct: false,
+      },
+      {
+        title: 'let doesnt let you change the value of the variable',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 189,
+    question: `What will be the output of the following JavaScript code if oddsums(5); is executed after the following code snippet?
+
+    function oddsums(n) 
+    {
+         let total = 0, result=[]; 
+         for(let x = 1; x <= n; x++) 
+         { 
+            let odd = 2*x-1; 
+            total += odd;
+            result.push(total);
+         }
+         return result;
+    }`,
+    options: [
+      {
+        title: 'Returns [1,4,9,16,25]',
+        correct: true,
+      },
+      {
+        title: 'Returns [1,2,3,4,5]',
+        correct: false,
+      },
+      {
+        title: 'Returns [3,6,9,12,15]',
+        correct: false,
+      },
+      {
+        title: 'Returns [1,3,5,7,9]',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 190,
+    question: `What would be the result or type of error if p is not defined in the following JavaScript code snippet?
+    console.log(p)
+    `,
+    options: [
+      {
+        title: 'Zero',
+        correct: false,
+      },
+      {
+        title: 'Null',
+        correct: false,
+      },
+      {
+        title: 'Reference Error',
+        correct: true,
+      },
+      {
+        title: 'Value not found Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 191,
+    question: `What will be the output of the following JavaScript code?
+
+    let x=x+1;
+    console.log(x);
+    `,
+    options: [
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: 'Null',
+        correct: false,
+      },
+      {
+        title: 'Reference error',
+        correct: false,
+      },
+      {
+        title: 'NaN',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 192,
+    question: `What will be the output of the following JavaScript code?
+
+    [x,y]=[y,x];`,
+    options: [
+      {
+        title: 'Throws exception',
+        correct: false,
+      },
+      {
+        title: 'Swap the value of the two variables',
+        correct: false,
+      },
+      {
+        title: 'Flashes an error',
+        correct: true,
+      },
+      {
+        title: 'Creates a new reference object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 193,
+    question: `Which looping statement allows XML tags to appear in JavaScript programs and adds API for operating on XML data?`,
+    options: [
+      {
+        title: 'for loop',
+        correct: false,
+      },
+      {
+        title: 'while loop',
+        correct: false,
+      },
+      {
+        title: 'for/each loop',
+        correct: true,
+      },
+      {
+        title: 'do while loop',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 194,
+    question: `Which exception does the Iterators throw from their next() method when there are no more values to iterate, that work on finite collections?`,
+    options: [
+      {
+        title: 'Exit Iteration',
+        correct: false,
+      },
+      {
+        title: 'Abort Iteration',
+        correct: false,
+      },
+      {
+        title: 'Abort',
+        correct: false,
+      },
+      {
+        title: 'Stop Iteration',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 195,
+    question: `Which method of the iterable object returns an iterator object for the collection?`,
+    options: [
+      {
+        title: 'iterator()',
+        correct: false,
+      },
+      {
+        title: '_iterator_()',
+        correct: true,
+      },
+      {
+        title: '_iteration_()',
+        correct: false,
+      },
+      {
+        title: '_return_iterator_()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 196,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+      var res = "";
+      res=res + Number.isSafeInteger(Math.pow(2, 53)-1)+": 2<sup>53</sup>-1<br>";
+      document.getElementById("demo").innerHTML = res;
+    }
+    </script> `,
+    options: [
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 197,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       document.getElementById("demo").innerHTML = Number.MAX_VALUE;
+    }
+    </script>`,
+    options: [
+      {
+        title: '1.7976931348623157e+308',
+        correct: true,
+      },
+      {
+        title: '1.7976931348623157e+305',
+        correct: false,
+      },
+      {
+        title: '1.7976931348623157e+307',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 198,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       document.getElementById("demo").innerHTML = Number.NEGATIVE_INFINITY;
+    }
+    </script>`,
+    options: [
+      {
+        title: '-1000',
+        correct: false,
+      },
+      {
+        title: '-infinity',
+        correct: true,
+      },
+      {
+        title: 'infinity',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 199,
+    question: ` What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       var x = 100;
+       document.getElementById("demo").innerHTML = x.NEGATIVE_INFINITY;
+    }
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'Undefined',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 200,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+       var num = 5.56789;
+       var n = num.toExponential();
+       document.getElementById("demo").innerHTML = n;
+    }
+    </script>
+    `,
+    options: [
+      {
+        title: '5.56789e+0',
+        correct: true,
+      },
+      {
+        title: '5.57e+0',
+        correct: false,
+      },
+      {
+        title: '5.568e+0',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
       },
     ],
   },

@@ -13,10 +13,11 @@
   top: 0;
   z-index: 999;
   transition: all ease-out 0.8s;
+  background: #BABABA;  /* fallback for old browsers */
 }
 
 .navbar.colorChange {
-  background: rgb(9, 9, 10);
+  background: #051937;  /* fallback for old browsers */
 }
 
 .navbar-container {
@@ -523,7 +524,7 @@
 
 @media screen and (max-width: 900px) {
   .home-title {
-    top: 30%;
+    top: 40%;
   }
   .newfeatures-component {
     padding: 50px 0;
