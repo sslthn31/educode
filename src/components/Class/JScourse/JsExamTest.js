@@ -74,12 +74,22 @@ const JsExamTest = () => {
     })
 
     const tanggal = new Date();
+
+    const tanggalSekarang = tanggal.toLocaleString('en-US', {
+      weekday: 'short', // long, short, narrow
+      day: 'numeric', // numeric, 2-digit
+      year: 'numeric', // numeric, 2-digit
+      month: 'long', // numeric, 2-digit, long, short, narrow
+      hour: 'numeric', // numeric, 2-digit
+      minute: 'numeric', // numeric, 2-digit
+      second: 'numeric', // numeric, 2-digit
+  })
   const postUserData = () => {
     const dataBody = {
       course: 'JS Course',
       ipAdress: ipUser,
       question: ngeMap,
-      startedAt: tanggal,
+      startedAt: tanggalSekarang,
     }
     Axios({
       method: 'POST',
