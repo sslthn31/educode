@@ -2691,7 +2691,7 @@ export const JsQuestionData = [
     ],
   },
   {
-    id: 101,
+    id: 107,
     question: `What is the fundamental rule of lexical scoping?`,
     options: [
       {
@@ -4994,6 +4994,2342 @@ document.write(e.id+" "+e.name");`,
       },
       {
         title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 201,
+    question: `What convenience does the following JavaScript code snippet provide?
+    let succ = function(x) x+1, yes = function() true, no = function() false;`,
+    options: [
+      {
+        title: 'Functional behaviour',
+        correct: true,
+      },
+      {
+        title: 'Modular behaviour',
+        correct: false,
+      },
+      {
+        title: 'No convenience',
+        correct: false,
+      },
+      {
+        title: 'Shorthand expression',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 202,
+    question: `What does the following JavaScript code snippet do?
+
+    data.sort(function(a,b),b-a);`,
+    options: [
+      {
+        title: 'Sort in the alphabetical order',
+        correct: false,
+      },
+      {
+        title: 'Sort in the chronological order',
+        correct: false,
+      },
+      {
+        title: 'Sort in reverse alphabetical order',
+        correct: false,
+      },
+      {
+        title: 'Sort in reverse numerical order',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 203,
+    question: `What is the code to be used to trim whitespaces?`,
+    options: [
+      {
+        title: 'let trimmed = (l.trim() for (l in lines));',
+        correct: true,
+      },
+      {
+        title: 'let trimmed = (trim(l));',
+        correct: false,
+      },
+      {
+        title: 'let trimmed = l.trim();',
+        correct: false,
+      },
+      {
+        title: 'let trimmed = for(l in lines));',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 204,
+    question: `What will be the reaction when a catch clause has no conditionals?`,
+    options: [
+      {
+        title: 'Takes it to be 0',
+        correct: false,
+      },
+      {
+        title: 'Takes it to be 1',
+        correct: false,
+      },
+      {
+        title: 'Takes it to be true',
+        correct: true,
+      },
+      {
+        title: 'Takes it to be false',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 205,
+    question: `When will the finally block be called?`,
+    options: [
+      {
+        title: 'When there is no exception',
+        correct: false,
+      },
+      {
+        title: 'When the catch does not match',
+        correct: false,
+      },
+      {
+        title: 'When there is exception',
+        correct: false,
+      },
+      {
+        title: 'After try-catch execution',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 206,
+    question: `What is the return type of typeof for standard JavaScript objects?`,
+    options: [
+      {
+        title: 'xml',
+        correct: false,
+      },
+      {
+        title: 'object',
+        correct: true,
+      },
+      {
+        title: 'dom',
+        correct: false,
+      },
+      {
+        title: 'html',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 207,
+    question: `Which method to use while working with XML fragments, instead of XML()?`,
+    options: [
+      {
+        title: 'XMLInterface()',
+        correct: false,
+      },
+      {
+        title: 'XMLClass()',
+        correct: false,
+      },
+      {
+        title: 'XMLList()',
+        correct: true,
+      },
+      {
+        title: 'XMLArray()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 208,
+    question: `Which of the following is the descendant operator?`,
+    options: [
+      {
+        title: '..',
+        correct: true,
+      },
+      {
+        title: '…',
+        correct: false,
+      },
+      {
+        title: '*',
+        correct: false,
+      },
+      {
+        title: '@',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 209,
+    question: `Which of the following is an example to perform the most common XML manipulations using the XML objects invocation?`,
+    options: [
+      {
+        title: 'insertChildBefore()',
+        correct: true,
+      },
+      {
+        title: 'insertChildAfter()',
+        correct: false,
+      },
+      {
+        title: 'appendChildAfter(…)',
+        correct: false,
+      },
+      {
+        title: 'appendChildBefore(…)',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 210,
+    question: `What is the code required to delete all “weight” tags?`,
+    options: [
+      {
+        title: 'delete weight(pt).all;',
+        correct: false,
+      },
+      {
+        title: 'delete pt.element[all];',
+        correct: false,
+      },
+      {
+        title: 'delete pt;',
+        correct: false,
+      },
+      {
+        title: 'delete pt..weight;',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 211,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = 10;
+    var y = "20";
+    var z = x + y;
+    document.getElementById("demo").innerHTML = z;
+    </script>`,
+    options: [
+      {
+        title: '30',
+        correct: false,
+      },
+      {
+        title: '10 20',
+        correct: false,
+      },
+      {
+        title: '1020',
+        correct: true,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 212,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = 10;
+    var y = 20;
+    document.getElementById("demo").innerHTML = x + y;
+    </script>`,
+    options: [
+      {
+        title: '1020',
+        correct: true,
+      },
+      {
+        title: '10 20',
+        correct: false,
+      },
+      {
+        title: 'this',
+        correct: false,
+      },
+      {
+        title: 'object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 213,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = "100";
+    var y = "10";
+    var z = x * y;   
+    document.getElementById("demo").innerHTML = z;
+    </script>`,
+    options: [
+      {
+        title: '1000',
+        correct: true,
+      },
+      {
+        title: '10',
+        correct: false,
+      },
+      {
+        title: '10010',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 214,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = 500;        // x is a number
+    var y = new Number(500);  // y is an object
+    document.getElementById("demo").innerHTML = (x===y);
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: 'error',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 215,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    var x = 9.656;
+    document.getElementById("demo").innerHTML =
+      x.toFixed(0)
+    </script>`,
+    options: [
+      {
+        title: '10',
+        correct: true,
+      },
+      {
+        title: '9.65',
+        correct: false,
+      },
+      {
+        title: '9.6',
+        correct: false,
+      },
+      {
+        title: '9.656',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 216,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+         document.getElementById("demo").innerHTML = Math.trunc(8.76);
+    }
+    </script>`,
+    options: [
+      {
+        title: '8.70',
+        correct: false,
+      },
+      {
+        title: '8.76',
+        correct: false,
+      },
+      {
+        title: '8.00',
+        correct: true,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 217,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    function myFunction() 
+    {
+         document.getElementById("demo").innerHTML = Math.LN10;
+    }
+    </script>`,
+    options: [
+      {
+        title: '2.00',
+        correct: false,
+      },
+      {
+        title: '2.10',
+        correct: false,
+      },
+      {
+        title: '2.20',
+        correct: false,
+      },
+      {
+        title: '2.30',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 218,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+     
+    <script>
+    function myFunction() 
+    {
+         document.getElementById("demo").innerHTML = Math.acosh(2);
+    }
+    </script>`,
+    options: [
+      {
+        title: '1.31',
+        correct: true,
+      },
+      {
+        title: '1.20',
+        correct: false,
+      },
+      {
+        title: '1.11',
+        correct: false,
+      },
+      {
+        title: '1.41',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 219,
+    question: `What are the events generated by the Node objects called?`,
+    options: [
+      {
+        title: 'generators',
+        correct: false,
+      },
+      {
+        title: 'emitters',
+        correct: true,
+      },
+      {
+        title: 'dispatchers',
+        correct: false,
+      },
+      {
+        title: 'highevents',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 220,
+    question: `What is the function used to deregister event handler f?`,
+    options: [
+      {
+        title: 'deleteAllListeners(name)',
+        correct: false,
+      },
+      {
+        title: 'deleteListener(name,f)',
+        correct: false,
+      },
+      {
+        title: 'removeListener(name,f)',
+        correct: true,
+      },
+      {
+        title: 'removeAllListeners(name)',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 221,
+    question: `What is the function used to remove all handlers for name events?`,
+    options: [
+      {
+        title: 'deleteAllListeners(name)',
+        correct: false,
+      },
+      {
+        title: 'deleteListener(name,f)',
+        correct: false,
+      },
+      {
+        title: 'removeListener(name,f)',
+        correct: false,
+      },
+      {
+        title: 'removeAllListeners(name)',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 222,
+    question: `Which function is a synonym for on()?`,
+    options: [
+      {
+        title: 'addListener()',
+        correct: true,
+      },
+      {
+        title: 'listeners()',
+        correct: false,
+      },
+      {
+        title: 'once()',
+        correct: false,
+      },
+      {
+        title: 'add()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 223,
+    question: `Which of the following is an event emitter?`,
+    options: [
+      {
+        title: 'once',
+        correct: false,
+      },
+      {
+        title: 'process',
+        correct: true,
+      },
+      {
+        title: 'listeners',
+        correct: false,
+      },
+      {
+        title: 'on',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 224,
+    question: `When do uncaught exceptions generate events?`,
+    options: [
+      {
+        title: 'When handlers are registered',
+        correct: true,
+      },
+      {
+        title: 'When handlers are deregistered',
+        correct: false,
+      },
+      {
+        title: 'When handler functions are called',
+        correct: false,
+      },
+      {
+        title: 'When handlers do not have a matching catch clause',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 225,
+    question: `Which among the following POSIX signals generate events?`,
+    options: [
+      {
+        title: 'SIGDOWN',
+        correct: false,
+      },
+      {
+        title: 'SIGFLOAT',
+        correct: false,
+      },
+      {
+        title: 'SIGINT',
+        correct: true,
+      },
+      {
+        title: 'SIGSHORT',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 226,
+    question: `What is the method used to pause “data” events?`,
+    options: [
+      {
+        title: 's.pause();',
+        correct: true,
+      },
+      {
+        title: 's.stop();',
+        correct: false,
+      },
+      {
+        title: 's.halt();',
+        correct: false,
+      },
+      {
+        title: 's.wait();',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 227,
+    question: `When the “end” event fires on EOF when no more data will arrive, which function is called?`,
+    options: [
+      {
+        title: 's.on(“data”,f);',
+        correct: false,
+      },
+      {
+        title: 's.on(“end”,f);',
+        correct: true,
+      },
+      {
+        title: 's.on(“error”,f);',
+        correct: false,
+      },
+      {
+        title: 's.on(“default”,f);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 228,
+    question: `What will be the return value of the write() method when the Node cannot write the data immediately and has to buffer it internally?`,
+    options: [
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: '1',
+        correct: false,
+      },
+      {
+        title: 'True',
+        correct: false,
+      },
+      {
+        title: 'False',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 229,
+    question: `If the user presses “ok” in the dialog box then what will be the output of the following JavaScript code?
+
+    function msg()
+    {  
+        var v= confirm("Are u sure?");  
+        if(v==true)
+        {  
+            alert("yes");  
+        }  
+        else
+        {  
+            alert("no");  
+        }  
+    }`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'yes',
+        correct: true,
+      },
+      {
+        title: 'no',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 230,
+    question: `What will be the output of the following JavaScript code?
+
+    document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);`,
+    options: [
+      {
+        title: 'Browser name',
+        correct: true,
+      },
+      {
+        title: 'Version',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'Undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 231,
+    question: `What will be the output of the following JavaScript code?
+
+    document.writeln("<br/>navigator.language: "+navigator.language);`,
+    options: [
+      {
+        title: 'Browser name',
+        correct: false,
+      },
+      {
+        title: 'Browser language',
+        correct: false,
+      },
+      {
+        title: 'Browser version',
+        correct: true,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 232,
+    question: `What will be the output of the following JavaScript code?
+
+    document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);`,
+    options: [
+      {
+        title: 'Browser version',
+        correct: true,
+      },
+      {
+        title: 'Browser name',
+        correct: false,
+      },
+      {
+        title: 'Browser language',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 233,
+    question: ` What will be the output of the following JavaScript code?
+
+    document.writeln("<br/>screen.width: "+screen.width);`,
+    options: [
+      {
+        title: 'Browser length',
+        correct: false,
+      },
+      {
+        title: 'Browser width',
+        correct: true,
+      },
+      {
+        title: 'Browser area',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 234,
+    question: `Rhino is originated by`,
+    options: [
+      {
+        title: 'Microsoft',
+        correct: false,
+      },
+      {
+        title: 'Mozilla',
+        correct: true,
+      },
+      {
+        title: 'Apple',
+        correct: false,
+      },
+      {
+        title: 'Chrome',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 235,
+    question: `Which of the following are global functions that are not part of core JavaScript?`,
+    options: [
+      {
+        title: 'spawn(f);',
+        correct: true,
+      },
+      {
+        title: 'trim();',
+        correct: false,
+      },
+      {
+        title: 'exult();',
+        correct: false,
+      },
+      {
+        title: 'eval()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 236,
+    question: `Which of the following reads the textual contents of a URL and returns as a string?`,
+    options: [
+      {
+        title: 'spawn(f);',
+        correct: false,
+      },
+      {
+        title: 'load(filename,…);',
+        correct: false,
+      },
+      {
+        title: 'readFile(file);',
+        correct: false,
+      },
+      {
+        title: 'readUrl(url);',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 237,
+    question: `Which Rhino command quits Rhino environment?`,
+    options: [
+      {
+        title: 'terminate()',
+        correct: false,
+      },
+      {
+        title: 'exit()',
+        correct: false,
+      },
+      {
+        title: 'quit()',
+        correct: true,
+      },
+      {
+        title: 'close()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 238,
+    question: ` Which is a useful way to try out small and simple Rhino programs and one-liners?`,
+    options: [
+      {
+        title: 'Starting an interactive shell',
+        correct: true,
+      },
+      {
+        title: 'Starting a one to one shell',
+        correct: false,
+      },
+      {
+        title: 'Creating a thread to do simple programs',
+        correct: false,
+      },
+      {
+        title: 'Starting a multiple shell',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 239,
+    question: `Which is a more formal way of importing packages and classes as JavaScript objects?`,
+    options: [
+      {
+        title: 'import(java.util.*);',
+        correct: false,
+      },
+      {
+        title: 'importClass(java.util.*);',
+        correct: true,
+      },
+      {
+        title: 'import.Class(java.util.*);',
+        correct: false,
+      },
+      {
+        title: 'Class.import(java.util.*);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 240,
+    question: `What will be the output of the following JavaScript code?
+
+    var f = new java.io.File("/tmp/test");
+    var out = new java.io.FileWriter(f);
+    out instanceof java.io.Reader`,
+    options: [
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'True',
+        correct: false,
+      },
+      {
+        title: 'Exception',
+        correct: false,
+      },
+      {
+        title: 'False',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 241,
+    question: `What does Rhino do when the getter and setter methods exist?`,
+    options: [
+      {
+        title: 'It becomes JavaScript properties',
+        correct: true,
+      },
+      {
+        title: 'Java classes are used to avoid them',
+        correct: false,
+      },
+      {
+        title: 'Java classes & JavaScript properties',
+        correct: false,
+      },
+      {
+        title: 'It act as javascript function',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 242,
+    question: `The JavaScript classes can be instantiated using _____ operator`,
+    options: [
+      {
+        title: 'create',
+        correct: false,
+      },
+      {
+        title: 'new',
+        correct: true,
+      },
+      {
+        title: 'instantiate',
+        correct: false,
+      },
+      {
+        title: 'create.new',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 243,
+    question: `The new Java arrays can be created into JavaScript programs using which of the following classes?`,
+    options: [
+      {
+        title: 'java.Array',
+        correct: false,
+      },
+      {
+        title: 'java.lang.*',
+        correct: false,
+      },
+      {
+        title: 'java.lang.Array',
+        correct: false,
+      },
+      {
+        title: 'java.lang.reflect.Array',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 244,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = 
+     Math.sin(90 * Math.PI / 180);
+    </script>`,
+    options: [
+      {
+        title: '1',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: '1.6',
+        correct: false,
+      },
+      {
+        title: '0.5',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 245,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = Math.abs(-4.5);
+    </script>`,
+    options: [
+      {
+        title: '-4.5',
+        correct: false,
+      },
+      {
+        title: '4.5',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 246,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML =
+    Math.min(0, 150, 30, 20, -8, -200);
+    </script>`,
+    options: [
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: '-8',
+        correct: false,
+      },
+      {
+        title: '-200',
+        correct: true,
+      },
+      {
+        title: '20',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 147,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = Math.floor(4.7);
+    </script>`,
+    options: [
+      {
+        title: '4.5',
+        correct: false,
+      },
+      {
+        title: '4',
+        correct: true,
+      },
+      {
+        title: '4.7',
+        correct: false,
+      },
+      {
+        title: '5',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 248,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = Math.sqrt(49);
+    </script`,
+    options: [
+      {
+        title: '6',
+        correct: false,
+      },
+      {
+        title: '7',
+        correct: true,
+      },
+      {
+        title: '49',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 249,
+    question: `Which is a fast C++ based JavaScript interpreter?`,
+    options: [
+      {
+        title: 'Node',
+        correct: true,
+      },
+      {
+        title: 'Sockets',
+        correct: false,
+      },
+      {
+        title: 'Processors',
+        correct: false,
+      },
+      {
+        title: 'Closures',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 250,
+    question: `Why does the Node rely on event handlers?`,
+    options: [
+      {
+        title: 'APIs are synchronous',
+        correct: false,
+      },
+      {
+        title: 'APIs are asynchronous',
+        correct: true,
+      },
+      {
+        title: 'APIs are reusable',
+        correct: false,
+      },
+      {
+        title: 'APIs are modular',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 251,
+    question: `What will be the output of the following JavaScript code?
+    <p id="demo"></p>
+    <script>
+    var x = 123e5;
+    document.getElementById("demo").innerHTML = x ;
+    </script>`,
+    options: [
+      {
+        title: 'node(program.js)',
+        correct: false,
+      },
+      {
+        title: 'program.js',
+        correct: false,
+      },
+      {
+        title: 'node program.js',
+        correct: true,
+      },
+      {
+        title: 'node.program.js',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 252,
+    question: `What is the alternative command used in Node for load()?`,
+    options: [
+      {
+        title: 'store()',
+        correct: false,
+      },
+      {
+        title: 'module()',
+        correct: false,
+      },
+      {
+        title: 'log()',
+        correct: false,
+      },
+      {
+        title: 'require()',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 253,
+    question: `What is the command used for debugging output in Node?`,
+    options: [
+      {
+        title: 'print();',
+        correct: false,
+      },
+      {
+        title: 'console.log(…);',
+        correct: true,
+      },
+      {
+        title: 'debug(…);',
+        correct: false,
+      },
+      {
+        title: 'execute(…);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 254,
+    question: `What is the code to print hello one second from now?`,
+    options: [
+      {
+        title: 'setTimeout(function() { console.log(“Hello World”); }, 1000);',
+        correct: true,
+      },
+      {
+        title: 'setTimeout(function() { 1000, console.log(“Hello World”); });',
+        correct: false,
+      },
+      {
+        title: 'setTimeout(function(1000) { console.log(“Hello World”); });',
+        correct: false,
+      },
+      {
+        title: 'setTimeout(function() { console.log(“Hello World”); });',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 255,
+    question: `Among the below given functions, Node supports which of the following client-side timer functions?`,
+    options: [
+      {
+        title: 'getInterval()',
+        correct: false,
+      },
+      {
+        title: 'Interval()',
+        correct: false,
+      },
+      {
+        title: 'clearTime()',
+        correct: false,
+      },
+      {
+        title: 'clearTimeout()',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 256,
+    question: `The necessary globals of a node are defined under which namespace?`,
+    options: [
+      {
+        title: 'variables',
+        correct: false,
+      },
+      {
+        title: 'system',
+        correct: false,
+      },
+      {
+        title: 'process',
+        correct: true,
+      },
+      {
+        title: 'using',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 257,
+    question: `Why does Node not block while waiting for operations to complete?`,
+    options: [
+      {
+        title: 'Static',
+        correct: false,
+      },
+      {
+        title: 'Asynchronous',
+        correct: true,
+      },
+      {
+        title: 'Synchronous',
+        correct: false,
+      },
+      {
+        title: 'Recursive',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 258,
+    question: `Which is the method used for registering handlers?`,
+    options: [
+      {
+        title: 'on()',
+        correct: true,
+      },
+      {
+        title: 'register()',
+        correct: false,
+      },
+      {
+        title: 'add()',
+        correct: false,
+      },
+      {
+        title: 'include()',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 259,
+    question: `The main purpose of JavaScript in web browser is to`,
+    options: [
+      {
+        title: 'Creating animations and other visual effects',
+        correct: true,
+      },
+      {
+        title: 'User Interface',
+        correct: false,
+      },
+      {
+        title: 'Visual effects',
+        correct: false,
+      },
+      {
+        title: 'User experience',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 260,
+    question: `A JavaScript program can traverse and manipulate document content through`,
+    options: [
+      {
+        title: 'Element Object',
+        correct: false,
+      },
+      {
+        title: 'Document Object',
+        correct: false,
+      },
+      {
+        title: 'Both Element and Document Object',
+        correct: true,
+      },
+      {
+        title: 'Data object',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 261,
+    question: `The behaviour of the document elements can be defined by`,
+    options: [
+      {
+        title: 'Using document object',
+        correct: false,
+      },
+      {
+        title: 'Registering appropriate event handlers',
+        correct: true,
+      },
+      {
+        title: 'Using element object',
+        correct: false,
+      },
+      {
+        title: 'Using data element',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 262,
+    question: `The service(s) that enables networking through scripted HTTP requests is`,
+    options: [
+      {
+        title: 'XMLHttpResponse',
+        correct: false,
+      },
+      {
+        title: 'XMLRequest',
+        correct: false,
+      },
+      {
+        title: 'XMLHttpRequest',
+        correct: true,
+      },
+      {
+        title: 'XMLHttps',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 263,
+    question: `The HTML5 specification does not includes`,
+    options: [
+      {
+        title: 'Data storage',
+        correct: false,
+      },
+      {
+        title: 'Graphics APIs',
+        correct: false,
+      },
+      {
+        title: 'Other APIs for web apps',
+        correct: false,
+      },
+      {
+        title: 'Networking',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 264,
+    question: `Which of the following is not an advanced services?`,
+    options: [
+      {
+        title: 'Data storage',
+        correct: false,
+      },
+      {
+        title: 'Networking',
+        correct: false,
+      },
+      {
+        title: 'XMLHttpRequest object',
+        correct: false,
+      },
+      {
+        title: 'Graphics APIs',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 265,
+    question: ` JavaScript code between a pair of “script” tags are called`,
+    options: [
+      {
+        title: 'Non-inline',
+        correct: false,
+      },
+      {
+        title: 'External',
+        correct: false,
+      },
+      {
+        title: 'Referenced',
+        correct: false,
+      },
+      {
+        title: 'Inline',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 266,
+    question: `Client-side JavaScript code is embedded within HTML documents in`,
+    options: [
+      {
+        title: 'A URL that uses the special javascript:encoding',
+        correct: false,
+      },
+      {
+        title: 'A URL that uses the special javascript:stack',
+        correct: false,
+      },
+      {
+        title: 'A URL that uses the special javascript:protocol',
+        correct: true,
+      },
+      {
+        title: 'A URL that uses the special javascript:code',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 267,
+    question: `What is the programming philosophy that argues that content and behaviour should as much as possible be kept separate?`,
+    options: [
+      {
+        title: 'Unobtrusive JavaScript',
+        correct: true,
+      },
+      {
+        title: 'Obtrusive JavaScript',
+        correct: false,
+      },
+      {
+        title: 'Inherited JavaScript',
+        correct: false,
+      },
+      {
+        title: 'Modular JavaScript ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 268,
+    question: ` Which of the following communicates with server-side CGI scripts through HTML form submissions and can be written without the use of JavaScript?`,
+    options: [
+      {
+        title: 'Static Web Pages',
+        correct: false,
+      },
+      {
+        title: 'Interactive Web Pages',
+        correct: true,
+      },
+      {
+        title: 'Conditional Web Pages',
+        correct: false,
+      },
+      {
+        title: 'All web pages',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 269,
+    question: `Which of the following is a way of embedding Client-side JavaScript code within HTML documents?`,
+    options: [
+      {
+        title: 'From javascript:encoding',
+        correct: false,
+      },
+      {
+        title: 'External file specified by the src attribute of a “script” tag',
+        correct: true,
+      },
+      {
+        title: 'By using a header tag',
+        correct: false,
+      },
+      {
+        title: 'By using body tag',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 270,
+    question: ` When does JavaScript code appear inline within an HTML file?`,
+    options: [
+      {
+        title: 'Between the “script” tag',
+        correct: true,
+      },
+      {
+        title: 'Outside the “script” tag',
+        correct: false,
+      },
+      {
+        title: 'Between or Outside the “script” tag',
+        correct: false,
+      },
+      {
+        title: 'Between the header tag',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 271,
+    question: `Which character in JavaScript code will be interpreted as XML markup?`,
+    options: [
+      {
+        title: '!',
+        correct: false,
+      },
+      {
+        title: '>',
+        correct: false,
+      },
+      {
+        title: '&',
+        correct: true,
+      },
+      {
+        title: '.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 272,
+    question: `Which is the root element in a HTML document?`,
+    options: [
+      {
+        title: 'HTML',
+        correct: true,
+      },
+      {
+        title: 'HEAD',
+        correct: false,
+      },
+      {
+        title: 'SCRIPT',
+        correct: false,
+      },
+      {
+        title: 'BODY',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 273,
+    question: `What is the code for getting the current time?`,
+    options: [
+      {
+        title: 'now = new Date();',
+        correct: false,
+      },
+      {
+        title: 'var now = new Date();',
+        correct: true,
+      },
+      {
+        title: 'var now = Date();',
+        correct: false,
+      },
+      {
+        title: 'var now = new Date(current);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 274,
+    question: `What is the code to start displaying the time when the document loads?`,
+    options: [
+      {
+        title: 'onload = displayTime;',
+        correct: false,
+      },
+      {
+        title: 'window. = displayTime;',
+        correct: false,
+      },
+      {
+        title: 'window.onload = displayTime;',
+        correct: true,
+      },
+      {
+        title: 'window.onload = start;',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 275,
+    question: `One of the main advantage of using src attribute is`,
+    options: [
+      {
+        title: 'It becomes self-cached',
+        correct: false,
+      },
+      {
+        title: 'It makes the HTML file modular',
+        correct: false,
+      },
+      {
+        title: 'It restricts manipulation in the HTML file',
+        correct: false,
+      },
+      {
+        title: 'It simplifies the HTML files',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 276,
+    question: `What will be done if more than one page requires a file of JavaScript code?`,
+    options: [
+      {
+        title: 'Downloads that many times',
+        correct: false,
+      },
+      {
+        title: 'Retrives from the browser cache',
+        correct: true,
+      },
+      {
+        title: 'Must be re executed',
+        correct: false,
+      },
+      {
+        title: 'Must be included in all the pages',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 277,
+    question: `What is the default value of the type attribute?`,
+    options: [
+      {
+        title: 'text/css',
+        correct: false,
+      },
+      {
+        title: 'text/javascript',
+        correct: true,
+      },
+      {
+        title: 'html',
+        correct: false,
+      },
+      {
+        title: 'xml',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 278,
+    question: `The language is commonly used to`,
+    options: [
+      {
+        title: 'Specify the users language',
+        correct: false,
+      },
+      {
+        title: 'Specify the language going to be scripted',
+        correct: false,
+      },
+      {
+        title: 'No longer in use',
+        correct: true,
+      },
+      {
+        title: 'Specify the programmers favourable language',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 279,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    var numbers1 = [4, 9];
+    var numbers2 = numbers1.map(myFunction);
+    document.getElementById("demo").innerHTML = numbers2;
+    function myFunction(value, index, array) 
+    {
+      return value * 2;
+    }
+    </script>`,
+    options: [
+      {
+        title: '8 9',
+        correct: false,
+      },
+      {
+        title: '8 18',
+        correct: true,
+      },
+      {
+        title: '4 9',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 280,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    var numbers = [45, 4, 9, 16, 25];
+    var arr= numbers.every(myFunction);
+    document.getElementById("demo").innerHTML =arr;
+    function myFunction(value, index, array) 
+    {
+       return value > 18;
+    }
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: false,
+      },
+      {
+        title: 'false',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 281,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    var numbers = [45, 4, 9, 16, 25];
+    var someOver18 = numbers.some(myFunction);
+    document.getElementById("demo").innerHTML = "Some over 18 is " + someOver18;
+    function myFunction(value, index, array) 
+    {
+      return value > 10;
+    }
+    </script>`,
+    options: [
+      {
+        title: 'true',
+        correct: true,
+      },
+      {
+        title: 'false',
+        correct: false,
+      },
+      {
+        title: 'Error',
+        correct: false,
+      },
+      {
+        title: 'undefined',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 282,
+    question: `What will be the output of the following JavaScript code?
+
+    <p id="demo"></p>
+    <script>
+    var arr = ["1", "1", "2", "1"];
+    var a = arr.lastIndexOf("1");
+    document.getElementById("demo").innerHTML = (a + 1);
+    </script>`,
+    options: [
+      {
+        title: '2',
+        correct: false,
+      },
+      {
+        title: '3',
+        correct: false,
+      },
+      {
+        title: '4',
+        correct: true,
+      },
+      {
+        title: '0',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 283,
+    question: `The word “document” mainly refers to`,
+    options: [
+      {
+        title: 'Dynamic Information',
+        correct: false,
+      },
+      {
+        title: 'Static Information',
+        correct: true,
+      },
+      {
+        title: 'Both Dynamic and Static Information',
+        correct: false,
+      },
+      {
+        title: 'Temporary information',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 284,
+    question: `Which object is the main entry point to all client-side JavaScript features and APIs?`,
+    options: [
+      {
+        title: 'Standard',
+        correct: false,
+      },
+      {
+        title: 'Location',
+        correct: false,
+      },
+      {
+        title: 'Window',
+        correct: true,
+      },
+      {
+        title: 'Position',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 285,
+    question: `Which identifier is used to represent a web browser window or frame?`,
+    options: [
+      {
+        title: 'frames',
+        correct: false,
+      },
+      {
+        title: 'window',
+        correct: true,
+      },
+      {
+        title: 'location',
+        correct: false,
+      },
+      {
+        title: 'frame',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 286,
+    question: `Which property in the Window object is used to refer to a Location object?`,
+    options: [
+      {
+        title: 'position',
+        correct: false,
+      },
+      {
+        title: 'area',
+        correct: false,
+      },
+      {
+        title: 'window',
+        correct: false,
+      },
+      {
+        title: 'location',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 287,
+    question: `The let keyword cannot be used`,
+    options: [
+      {
+        title: 'alert()',
+        correct: true,
+      },
+      {
+        title: 'prompt()',
+        correct: false,
+      },
+      {
+        title: 'message()',
+        correct: false,
+      },
+      {
+        title: 'console.log',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 288,
+    question: `The setTimeout() method is used to`,
+    options: [
+      {
+        title: 'Make the event sleep',
+        correct: false,
+      },
+      {
+        title: 'Register a function to be invoked after a certain time',
+        correct: true,
+      },
+      {
+        title: 'Invoke an event after a certain time',
+        correct: false,
+      },
+      {
+        title: 'Time for iteration',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 289,
+    question: `Which of the following is a global object?`,
+    options: [
+      {
+        title: 'Register',
+        correct: false,
+      },
+      {
+        title: 'Location',
+        correct: false,
+      },
+      {
+        title: 'Window',
+        correct: true,
+      },
+      {
+        title: 'Position',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 290,
+    question: `When will the window property come into play?`,
+    options: [
+      {
+        title: 'Representation convenience',
+        correct: false,
+      },
+      {
+        title: 'Use as an extension of other objects',
+        correct: false,
+      },
+      {
+        title: 'Use objects in the Window object',
+        correct: false,
+      },
+      {
+        title: 'Refer to window object itself',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 291,
+    question: `Which is the property that represents the content displayed in the window?`,
+    options: [
+      {
+        title: 'document',
+        correct: true,
+      },
+      {
+        title: 'content',
+        correct: false,
+      },
+      {
+        title: 'window',
+        correct: false,
+      },
+      {
+        title: 'frame',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 292,
+    question: `How to pick a document element based on the value of its id attribute?`,
+    options: [
+      {
+        title: 'getElementsbyId()',
+        correct: false,
+      },
+      {
+        title: 'getElementbyId()',
+        correct: true,
+      },
+      {
+        title: 'both getElementsbyId() and getElementbyId()',
+        correct: false,
+      },
+      {
+        title: 'getElement',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 293,
+    question: `What is the property to access the first child of a node`,
+    options: [
+      {
+        title: 'timestamp.Child1',
+        correct: false,
+      },
+      {
+        title: 'timestamp.Child(1)',
+        correct: false,
+      },
+      {
+        title: 'timestamp.Child(0)',
+        correct: false,
+      },
+      {
+        title: 'timestamp.firstChild',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 294,
+    question: `Which of the following object belongs to the style property?`,
+    options: [
+      {
+        title: 'Element',
+        correct: true,
+      },
+      {
+        title: 'Window',
+        correct: false,
+      },
+      {
+        title: 'Location',
+        correct: false,
+      },
+      {
+        title: 'Dynamic',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 295,
+    question: `What is the purpose of the event handlers in the JavaScript?`,
+    options: [
+      {
+        title: 'Adds innerHTML page to the code',
+        correct: false,
+      },
+      {
+        title: 'Performs handling of exceptions and occurrences',
+        correct: false,
+      },
+      {
+        title: 'Allows JavaScript code to alter the behaviour of windows',
+        correct: true,
+      },
+      {
+        title: 'Change the server location',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 296,
+    question: `Which handler is triggered when the content of the document in the window is stable and ready for manipulation?`,
+    options: [
+      {
+        title: 'onload',
+        correct: true,
+      },
+      {
+        title: 'manipulate',
+        correct: false,
+      },
+      {
+        title: 'create',
+        correct: false,
+      },
+      {
+        title: 'onkeypress',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 297,
+    question: `When a program contains extensive use of event handlers, which of the following is necessary?`,
+    options: [
+      {
+        title: 'Modular functions',
+        correct: false,
+      },
+      {
+        title: 'Nested functions',
+        correct: true,
+      },
+      {
+        title: 'Split up programs',
+        correct: false,
+      },
+      {
+        title: 'Global variables',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 298,
+    question: `What is the JavaScript code snippet to find all container elements with class “reveal”?`,
+    options: [
+      {
+        title: 'var elements = document.getElementsByClassName(“reveal”);',
+        correct: true,
+      },
+      {
+        title: 'var elements = document.getElementByClassName(“reveal”);',
+        correct: false,
+      },
+      {
+        title: 'var elements = document.getElementByName(“reveal”);',
+        correct: false,
+      },
+      {
+        title: 'var elements = document.getElementsClassName(“reveal”);',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 299,
+    question: `What is the JavaScript code snippet to update the content of the timestamp element when the user clicks on it?`,
+    options: [
+      {
+        title: 'timestamp.onLoad = function() { this.innerHTML = new Date().toString(); }',
+        correct: false,
+      },
+      {
+        title: 'timestamp.onclick = function() { this.innerHTML = new Date().toString(); }',
+        correct: true,
+      },
+      {
+        title: 'timestamp.onload = function() { this.innerHTML = new Date().toString(); }',
+        correct: false,
+      },
+      {
+        title: 'timestamp.onclick = function() { innerHTML = new Date().toString(); }',
         correct: false,
       },
     ],
