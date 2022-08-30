@@ -4,9 +4,12 @@ import { CssQuestionData } from '../../certificationquestiondata/Cssquestiondata
 import { ImArrowLeft, ImArrowRight } from 'react-icons/im';
 import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
 import { useTimer } from 'react-timer-hook';
+import Axios from 'axios';
+
 
 const CssExamTest = () => {
   const [currentIndex, setCurrentIndext] = useState(0);
+  const [ipUser, setIpUser] = useState([]);
   const [quiz, setQuiz] = useState(CssQuestionData);
   const { id, question, options } = quiz[currentIndex];
   const [score, setScore] = useState({
@@ -50,17 +53,65 @@ const CssExamTest = () => {
   };
 
   useEffect(() => {
-    const checkScore = () => {
-      const questionAnswered = quiz.filter((item) => item.selected);
-      const questionCorrect = questionAnswered.filter((item) => item.options.find((options) => options.correct && options.selected === options.correct));
-      setScore({
-        correct: questionCorrect.length,
-        false: quiz.length - questionCorrect.length,
-      });
-    };
+    const fetchIpUser = () => {
+      Axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_T5NqmEUit0eOk2w1dlymaTQHhMakD')
+      .then((res) => {
+        console.log('ini 1', res);
+        setIpUser(res.data.ip);
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    }
+    fetchIpUser()
+    
+    const ngeMap = quiz.map((nomor) => {
+      return nomor.id
+    })
 
-    checkScore();
-  }, [quiz]);
+    const tanggal = new Date();
+
+    const tanggalSekarang = tanggal.toLocaleString('en-US', {
+      weekday: 'short', // long, short, narrow
+      day: 'numeric', // numeric, 2-digit
+      year: 'numeric', // numeric, 2-digit
+      month: 'long', // numeric, 2-digit, long, short, narrow
+      hour: 'numeric', // numeric, 2-digit
+      minute: 'numeric', // numeric, 2-digit
+      second: 'numeric', // numeric, 2-digit
+  })
+  const postUserData = () => {
+    const dataBody = {
+      course: 'CSS Course',
+      ipAdress: ipUser,
+      question: ngeMap,
+      startedAt: tanggalSekarang,
+    }
+    Axios({
+      method: 'POST',
+      url: 'https://educode-api-sslthn31.herokuapp.com/v1/view/observer',
+      data: dataBody,
+    })
+    .then((res) => {
+      console.log("success")
+      console.log('ini 2', res)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+  postUserData() 
+  
+  const checkScore = () => {
+    const questionAnswered = quiz.filter((item) => item.selected);
+    const questionCorrect = questionAnswered.filter((item) => item.options.find((options) => options.correct && options.selected === options.correct));
+    setScore({
+      correct: questionCorrect.length,
+      false: quiz.length - questionCorrect.length,
+    });
+  };
+  checkScore();
+  }, [quiz, ipUser]);
   //- Score : {score.correct} : {score.false}
   return (
     <div className="quiz">
