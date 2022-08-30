@@ -16,6 +16,8 @@ import SummaryJs from '../../components/Class/JScourse/Summary';
 import SummaryCss from '../../components/Class/CssCourse/Summary';
 import SummaryHtml from '../../components/Class/HtmlCourse/Summary';
 import Success from '../../components/prototype/shortcut/Success';
+import Success2 from '../../components/prototype/shortcut/Success2';
+import Success3 from '../../components/prototype/shortcut/Success3';
 import Fail from '../../components/prototype/shortcut/Fail';
 import Footer from '../../components/Footer';
 import Observer from '../../components/observer/observer';
@@ -40,6 +42,8 @@ const Router = () => {
           <Route path="/summary" component={SummaryJs} />
           <Route path="/examStart" component={Quiz} />
           <Route path="/success" component={Success} />
+          <Route path="/success2" component={Success2} />
+          <Route path="/success3" component={Success3} />
           <Route path="/fail" component={Fail} />
           <Route path="/summaryprototype" component={Summary} />
           <Route path="/observer" component={Observer} />
