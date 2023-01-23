@@ -40,16 +40,16 @@ const Success = () => {
   const [count, setCount] = useState(0);
 
   function onChartReady(echarts) {
-    console.log('echarts is ready', echarts);
+    // console.log('echarts is ready', echarts);
   }
 
   function onChartClick(param, echarts) {
-    console.log(param, echarts);
+    // console.log(param, echarts);
     setCount(count + 1);
   };
 
   function onChartLegendselectchanged(param, echarts) {
-    console.log(param, echarts);
+    // console.log(param, echarts);
   };
   return (
     <div className="summaryjs">

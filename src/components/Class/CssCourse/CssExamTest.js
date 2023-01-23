@@ -56,7 +56,7 @@ const CssExamTest = () => {
     const fetchIpUser = () => {
       Axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_T5NqmEUit0eOk2w1dlymaTQHhMakD')
       .then((res) => {
-        console.log('ini 1', res);
+        // console.log('ini 1', res);
         setIpUser(res.data.ip);
       })
       .catch((err) => {
@@ -89,12 +89,12 @@ const CssExamTest = () => {
     }
     Axios({
       method: 'POST',
-      url: 'https://educode-api-sslthn31.herokuapp.com/v1/view/observer',
+      url: 'https://educode-api.vercel.app/v1/view/observer',
       data: dataBody,
     })
     .then((res) => {
       console.log("success")
-      console.log('ini 2', res)
+      // console.log('ini 2', res)
     })
     .catch((err) => {
       console.log(err)

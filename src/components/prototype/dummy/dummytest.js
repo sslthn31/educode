@@ -10,7 +10,7 @@ const DummyTest = () => {
     const [counter, setCounter] = useState(1);
     const [loading, setLoading] = useState(false);
     const nangkepApi = (page) =>{
-        Axios.get(`https://educode-api-sslthn31.herokuapp.com/v1/course/jscourse?page=${page}&perPage=1`)
+        Axios.get(`https://educode-api.vercel.app/v1/course/jscourse?page=${page}&perPage=1`)
     .then(res => {
         console.log(res.data.data)
         setTangkep(res.data.data)
