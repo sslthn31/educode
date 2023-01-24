@@ -8,9 +8,9 @@ const HtmlCourse = () => {
   const [counter, setCounter] = useState(1);
   const [loading, setLoading] = useState(false);
   const nangkepApi = (page) => {
-    Axios.get(`https://educode-api-sslthn31.herokuapp.com/v1/course/htmlcourse?page=${page}&perPage=1`)
+    Axios.get(`https://educode-api.vercel.app/v1/course/htmlcourse?page=${page}&perPage=1`)
       .then((res) => {
-        console.log(res.data.data);
+        // console.log(res.data.data);
         setTangkep(res.data.data);
         setLoading(true);
       })
@@ -26,12 +26,12 @@ const HtmlCourse = () => {
   const nextButton = () => {
     setCounter(counter >= 10 ? 10 : counter + 1);
     setLoading();
-    console.log(counter);
+    // console.log(counter);
   };
   const prevButton = () => {
     setCounter(counter <= 1 ? 1 : counter - 1);
     setLoading();
-    console.log(counter);
+    // console.log(counter);
   };
 
   if (loading) {
@@ -45,11 +45,11 @@ const HtmlCourse = () => {
                 <p>{datanya.description}</p>
               </div>
               <div className="course-desc-image">
-                <img src={`https://educode-api-sslthn31.herokuapp.com/${datanya.image}`} alt="" />
+                <img src={`https://educode-api.vercel.app/${datanya.image}`} alt="" />
               </div>
               <div className="link-text-editor">
                 <button>
-                  <a href="https://educode-online-text-editor.netlify.app/" target="_blank">
+                  <a href="https://educode-online-text-editor.netlify.app/" target="_blank" rel="noreferrer">
                     Try Here
                   </a>
                 </button>

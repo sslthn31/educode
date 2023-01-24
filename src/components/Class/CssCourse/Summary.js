@@ -5,7 +5,7 @@ import ReactECharts from 'echarts-for-react';
 const SummaryCss = () => {
   const history = useHistory();
   const location = useLocation();
-  console.log(location.state);
+  // console.log(location.state);
   const score = location.state.score;
 
   const option = {
@@ -43,16 +43,16 @@ const SummaryCss = () => {
   const [count, setCount] = useState(0);
 
   function onChartReady(echarts) {
-    console.log('echarts is ready', echarts);
+    // console.log('echarts is ready', echarts);
   }
 
   function onChartClick(param, echarts) {
-    console.log(param, echarts);
+    // console.log(param, echarts);
     setCount(count + 1);
   };
 
   function onChartLegendselectchanged(param, echarts) {
-    console.log(param, echarts);
+    // console.log(param, echarts);
   };
 
   if (score.correct <= 75)

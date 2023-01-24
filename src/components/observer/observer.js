@@ -7,10 +7,10 @@ const [observerData, setObserverData] = useState([]);
 const fetchObserverData = () => {
     axios({
         method: "GET",
-        url: "https://educode-api-sslthn31.herokuapp.com/v1/view/observer?page=all",
+        url: "https://educode-api.vercel.app/v1/view/observer?page=all",
     })
     .then((res) => {
-        console.log(res.data.data);
+        // console.log(res.data.data);
         setObserverData(res.data.data);
     })
     .catch((err) => {
