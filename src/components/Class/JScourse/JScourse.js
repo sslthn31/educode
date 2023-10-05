@@ -8,7 +8,7 @@ const JScourse = () => {
   const [counter, setCounter] = useState(1);
   const [loading, setLoading] = useState(false);
   const nangkepApi = (page) => {
-    Axios.get(`https://educode-api.vercel.app/v1/course/jscourse?page=${page}&perPage=1`)
+    Axios.get(`https://educode-api.vercel.app/v1/course/jscourse/js${counter}`)
       .then((res) => {
         // console.log(res.data.data);
         setTangkep(res.data.data);
